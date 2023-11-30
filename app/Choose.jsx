@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
-import icon8 from '../../public/icon8.svg'
-import icon7 from '../../public/icon7.svg'
-import icon6 from '../../public/icon6.svg'
-import icon5 from '../../public/icon5.svg'
-import choose from '../../public/choose.png.png'
-import choose1 from '../../public/choose1.svg'
-import choose2 from '../../public/choose2.svg'
-import choose3 from '../../public/choose3.svg'
+import icon8 from '../public/icon8.svg'
+import icon7 from '../public/icon7.svg'
+import icon6 from '../public/icon6.svg'
+import icon5 from '../public/icon5.svg'
+import choose from '../public/choose.png.png'
+import choose1 from '../public/choose1.svg'
+import choose2 from '../public/choose2.svg'
+import choose3 from '../public/choose3.svg'
 
 
 const Choose = () => {
