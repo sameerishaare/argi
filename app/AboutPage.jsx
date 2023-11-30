@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
-import image1 from '../../public/image1.svg'
-import image2 from '../../public/image2.svg'
-import image3 from '../../public/image3.svg'
+import image1 from '../public/image1.svg'
+import image2 from '../public/image2.svg'
+import image3 from '../public/image3.svg'
 
 const AboutPage = () => {
     return (
