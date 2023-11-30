@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import prod1 from '../../public/prod1.svg'
-import prod2 from '../../public/prod2.svg'
-import prod3 from '../../public/prod3.svg'
-import prod4 from '../../public/prod4.svg'
+import prod1 from '../public/prod1.svg'
+import prod2 from '../public/prod2.svg'
+import prod3 from '../public/prod3.svg'
+import prod4 from '../public/prod4.svg'
 
 const OurProduct = () => {
     return (
