@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import icon1 from '../../public/icon1.svg'
-import icon2 from '../../public/icon2.svg'
-import icon3 from '../../public/icon3.svg'
-import icon4 from '../../public/icon4.svg'
+import icon1 from '../public/icon1.svg'
+import icon2 from '../public/icon2.svg'
+import icon3 from '../public/icon3.svg'
+import icon4 from '../public/icon4.svg'
 
 const Counter = () => {
     return (
