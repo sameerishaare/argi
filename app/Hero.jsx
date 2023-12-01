@@ -196,6 +196,7 @@ const Hero = () => {
             {navItems.map((item, index) => {
               return (
                 <div
+                  key={index}
                   style={{
                     backgroundColor: "#76B727",
                   }}
@@ -253,7 +254,7 @@ const Hero = () => {
           <p className="text-white text-[3rem] font-bold">
             Cultivating Growth:
             <br />
-            <i>Agropharma's Sustainable</i>
+            <i>Agropharma&apos;s Sustainable</i>
             <br />
             <i>Revolution</i>
           </p>
@@ -289,7 +290,7 @@ const Hero = () => {
           <p className="text-white text-[3rem] font-bold">
             Cultivating Growth:
             <br />
-            <i>Agropharma's Sustainable</i>
+            <i>Agropharma&apos;s Sustainable</i>
             <br />
             <i>Revolution</i>
           </p>
@@ -325,7 +326,7 @@ const Hero = () => {
           <p className="text-white text-[3rem] font-bold">
             Cultivating Growth:
             <br />
-            <i>Agropharma's Sustainable</i>
+            <i>Agropharma&apos;s Sustainable</i>
             <br />
             <i>Revolution</i>
           </p>
