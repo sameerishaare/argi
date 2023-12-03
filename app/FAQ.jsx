@@ -38,7 +38,7 @@ const FAQ = () => {
                 <div className='w-full mt-8'>
                     {faqList.map((item, index) => {
                         return(
-                            <div onClick={()=>{
+                            <div key={index} onClick={()=>{
                                 if(question === index){
                                     setQuestion(-1)
                                 }else{

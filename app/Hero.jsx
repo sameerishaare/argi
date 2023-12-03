@@ -191,7 +191,7 @@ const Hero = () => {
           <div className="flex h-full overflow-hidden">
             {navItems.map((item, index) => {
               return (
-                <div className="flex flex-col items-center group">
+                <div key={index} className="flex flex-col items-center group">
                   <div
                     key={index}
                     className="h-full group-hover:h-[65%] transition-all duration-[600ms] ease-in-out cursor-pointer"
