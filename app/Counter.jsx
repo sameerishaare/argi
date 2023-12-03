@@ -1,53 +1,79 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import icon1 from '../public/icon1.svg'
 import icon2 from '../public/icon2.svg'
 import icon3 from '../public/icon3.svg'
 import icon4 from '../public/icon4.svg'
+import CountUp from 'react-countup';
 
 const Counter = () => {
+    const [isIntersecting, setIsIntersecting] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      { rootMargin: "00px" }
+    );
+    console.log(isIntersecting);
+    observer.observe(ref.current);
+
+    return () => observer.disconnect();
+  }, [isIntersecting]);
+
+  const [startCount, setStartCount] = useState(false);
+
+  useEffect(() => {
+    if (isIntersecting) {
+      setStartCount(true);
+    } else {
+        setStartCount(false);
+    }
+  }, [isIntersecting]);
     return (
-        <div className='flex flex-col md:flex-row gap-5 bg-green-800 py-5 justify-center items-center'>
+        <div className='flex flex-col md:flex-row gap-5 bg-[#036B46] py-5 justify-center items-center'>
 
 
             <div className="basis-1/4 flex  justify-center">
-                <div className="p-2 text-green-500 flex justify-center items-center">
+                <div className="p-2 text-[#76B728] flex justify-center items-center">
                     <Image src={icon4} alt="Picture of the author" width={40} style={{ borderRadius: '2%' }} height={500} />
 
                 </div>
-                <div className="flex-col text-white ms-2">
-                    <div className="font-bold text-2xl">100+</div>
-                    <div className="font-semibold">Years of Experince</div>
+                <div ref={ref} className="flex-col text-white ms-2">
+                    <div className="font-bold text-2xl">{startCount ? <CountUp end={10}/> : "0" }</div>
+                    <div className="">Years of Experince</div>
                 </div>
             </div>
             <div className="basis-1/4 flex  justify-center">
-                <div className="p-2 text-green-500 flex justify-center items-center">
+                <div className="p-2 text-[#76B728] flex justify-center items-center">
 
                     <Image src={icon3} alt="Picture of the author" width={40} style={{ borderRadius: '2%' }} height={500} />
                 </div>
                 <div className="flex-col text-white ms-2">
-                    <div className="font-bold text-2xl">100+</div>
-                    <div className="font-semibold">Years of Experince</div>
+                    <div className="font-bold text-2xl">{startCount ? <CountUp end={50}/> : "0" }+</div>
+                    <div className="">Export Quality Products</div>
                 </div>
             </div>
             <div className="basis-1/4 flex  justify-center">
-                <div className="p-2 text-green-500 flex justify-center items-center">
+                <div className="p-2 text-[#76B728] flex justify-center items-center">
                     <Image src={icon2} alt="Picture of the author" width={40} style={{ borderRadius: '2%' }} height={500} />
 
                 </div>
                 <div className="flex-col text-white ms-2">
-                    <div className="font-bold text-2xl">100+</div>
-                    <div className="font-semibold">Years of Experince</div>
+                    <div className="font-bold text-2xl">{startCount ? <CountUp end={200}/> : "0" }+</div>
+                    <div className="">Satisfied Customers</div>
                 </div>
             </div>
             <div className="basis-1/4 flex  justify-center">
-                <div className="p-2 text-green-500 flex justify-center items-center">
+                <div className="p-2 text-[#76B728] flex justify-center items-center">
                     <Image src={icon1} alt="Picture of the author" width={40} style={{ borderRadius: '2%' }} height={500} />
 
                 </div>
                 <div className="flex-col text-white ms-2">
-                    <div className="font-bold text-2xl">100+</div>
-                    <div className="font-semibold">Years of Experince</div>
+                    <div className="font-bold text-2xl">{startCount ? <CountUp end={40}/> : "0" }</div>
+                    <div className="">Well Trained & Dedicated Team</div>
                 </div>
             </div>
 

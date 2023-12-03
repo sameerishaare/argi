@@ -21,11 +21,7 @@ const navItems = [
   {
     name: "FAQ",
     link: "/faq",
-  },
-  {
-    name: "Brochure",
-    link: "/brochure",
-  },
+  }
 ];
 
 const Hero = () => {
@@ -82,7 +78,7 @@ const Hero = () => {
           className={`w-full bg-white  ${
             expand
               ? "absolute top-[2.5rem] bg-opacity-[30%] h-[6rem]"
-              : "sticky top-0 h-[4.5rem]"
+              : "fixed top-0 h-[4.5rem] shadow-xl"
           } transition-all duration-[350ms] ease-linear z-[300] flex justify-between items-center`}
         >
           <div
@@ -192,47 +188,70 @@ const Hero = () => {
               />
             </svg>
           </div>
-          <div className="flex h-full">
+          <div className="flex h-full overflow-hidden">
             {navItems.map((item, index) => {
               return (
-                <div
-                  style={{
-                    backgroundColor: "#76B727",
-                  }}
-                  className="flex h-0 group hover:h-full transition-all duration-[600ms] ease-in-out cursor-pointer"
-                >
+                <div key={index} className="flex flex-col items-center group">
                   <div
-                    key={`nav_${index}`}
-                    className={`px-5 flex justify-center items-center font-medium text-[1rem] ${
-                      expand
-                        ? "min-h-[6rem] text-white"
-                        : "min-h-[4.5rem] text-[#444444]"
-                    } group-hover:text-white transition-all duration-[600ms] ease-in-out flex justify-center items-center`}
+                    key={index}
+                    className="h-full group-hover:h-[65%] transition-all duration-[600ms] ease-in-out cursor-pointer"
                   >
-                    {item.name === "Brochure" && (
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="none"
-                        className="h-4 w-4 mr-2"
-                      >
-                        <path
-                          d="M15.0461 22.9652C15.2993 23.2171 15.6424 23.3602 16.0003 23.3602C16.357 23.3602 16.7001 23.2172 16.9543 22.9652L24.3225 15.5937C24.7085 15.21 24.8244 14.6282 24.6151 14.123C24.4066 13.6201 23.9141 13.2906 23.3696 13.2906H21.2015V1.34794C21.2015 0.603414 20.5978 0 19.8533 0H12.1471C11.4025 0 10.7978 0.603414 10.7978 1.34794V13.2906H8.62973C8.08438 13.2906 7.59272 13.6201 7.38428 14.123C7.17492 14.6282 7.29085 15.21 7.67545 15.5937L15.0461 22.9652Z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M28.1785 26.6914H3.82256C2.35633 26.6914 1.16797 27.8794 1.16797 29.3459C1.16797 30.812 2.3564 32.0005 3.82256 32.0005H28.1784C29.6446 32.0005 30.8329 30.812 30.8329 29.3459C30.833 27.8794 29.6446 26.6914 28.1785 26.6914Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    )}
-                    <span>{item.name}</span>
+                    <div
+                      key={`nav_${index}`}
+                      className={`px-5 flex justify-center items-center font-semibold text-[1rem] ${
+                        expand
+                          ? "min-h-[6rem] text-white"
+                          : "min-h-[4.5rem] text-[#444444]"
+                      } group-hover:text-[#015E37] transition-all duration-[600ms] ease-in-out flex justify-center items-center`}
+                    >
+                      {item.name === "Brochure" && (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          className="h-4 w-4 mr-2"
+                        >
+                          <path
+                            d="M15.0461 22.9652C15.2993 23.2171 15.6424 23.3602 16.0003 23.3602C16.357 23.3602 16.7001 23.2172 16.9543 22.9652L24.3225 15.5937C24.7085 15.21 24.8244 14.6282 24.6151 14.123C24.4066 13.6201 23.9141 13.2906 23.3696 13.2906H21.2015V1.34794C21.2015 0.603414 20.5978 0 19.8533 0H12.1471C11.4025 0 10.7978 0.603414 10.7978 1.34794V13.2906H8.62973C8.08438 13.2906 7.59272 13.6201 7.38428 14.123C7.17492 14.6282 7.29085 15.21 7.67545 15.5937L15.0461 22.9652Z"
+                            fill="currentColor"
+                          />
+                          <path
+                            d="M28.1785 26.6914H3.82256C2.35633 26.6914 1.16797 27.8794 1.16797 29.3459C1.16797 30.812 2.3564 32.0005 3.82256 32.0005H28.1784C29.6446 32.0005 30.8329 30.812 30.8329 29.3459C30.833 27.8794 29.6446 26.6914 28.1785 26.6914Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      )}
+                      <span>{item.name}</span>
+                    </div>
                   </div>
+                  <div className="w-full flex justify-center">
+                      <div className="rounded-full h-[0.65rem] w-[0.65rem] bg-[#015E37]"></div>
+                    </div>
                 </div>
               );
             })}
+            <div className="h-full px-5 flex justify-center items-center font-semibold text-[1rem] bg-[#76B728] hover:bg-[#036B46] text-white transition-all duration-[600ms] ease-in-out cursor-pointer ml-3">
+              <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          className="h-4 w-4 mr-2"
+                        >
+                          <path
+                            d="M15.0461 22.9652C15.2993 23.2171 15.6424 23.3602 16.0003 23.3602C16.357 23.3602 16.7001 23.2172 16.9543 22.9652L24.3225 15.5937C24.7085 15.21 24.8244 14.6282 24.6151 14.123C24.4066 13.6201 23.9141 13.2906 23.3696 13.2906H21.2015V1.34794C21.2015 0.603414 20.5978 0 19.8533 0H12.1471C11.4025 0 10.7978 0.603414 10.7978 1.34794V13.2906H8.62973C8.08438 13.2906 7.59272 13.6201 7.38428 14.123C7.17492 14.6282 7.29085 15.21 7.67545 15.5937L15.0461 22.9652Z"
+                            fill="currentColor"
+                          />
+                          <path
+                            d="M28.1785 26.6914H3.82256C2.35633 26.6914 1.16797 27.8794 1.16797 29.3459C1.16797 30.812 2.3564 32.0005 3.82256 32.0005H28.1784C29.6446 32.0005 30.8329 30.812 30.8329 29.3459C30.833 27.8794 29.6446 26.6914 28.1785 26.6914Z"
+                            fill="currentColor"
+                          />
+              </svg>
+              <span>Brochure</span>
+            </div>
           </div>
           <div className="h-full flex justify-center items-center px-[1rem]">
             <div className="px-[1.5rem] bg-white rounded-full flex justify-center items-center border-[2px] border-[#79BC28] scale-90 hover:bg-[#E3FFC1] cursor-pointer">
@@ -253,12 +272,12 @@ const Hero = () => {
           <p className="text-white text-[3rem] font-bold">
             Cultivating Growth:
             <br />
-            <i>Agropharma's Sustainable</i>
+            <i>Agropharma&apos;s Sustainable</i>
             <br />
             <i>Revolution</i>
           </p>
           <div className="">
-            <button className="flex justify-center items-center rounded-full bg-[#76B728] px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1">
+            <button className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1">
               <svg
                 className="h-6 w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -289,12 +308,12 @@ const Hero = () => {
           <p className="text-white text-[3rem] font-bold">
             Cultivating Growth:
             <br />
-            <i>Agropharma's Sustainable</i>
+            <i>Agropharma&apos;s Sustainable</i>
             <br />
             <i>Revolution</i>
           </p>
           <div className="">
-            <button className="flex justify-center items-center rounded-full bg-[#76B728] px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1">
+            <button className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1">
               <svg
                 className="h-6 w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -325,12 +344,12 @@ const Hero = () => {
           <p className="text-white text-[3rem] font-bold">
             Cultivating Growth:
             <br />
-            <i>Agropharma's Sustainable</i>
+            <i>Agropharma&apos;s Sustainable</i>
             <br />
             <i>Revolution</i>
           </p>
           <div className="">
-            <button className="flex justify-center items-center rounded-full bg-[#76B728] px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1">
+            <button className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1">
               <svg
                 className="h-6 w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
