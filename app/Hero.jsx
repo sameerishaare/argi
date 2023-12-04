@@ -1,26 +1,27 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const navItems = [
   {
     name: "Home",
-    link: "/",
+    link: "#",
   },
   {
     name: "About Us",
-    link: "/about",
+    link: "#about-us",
   },
   {
     name: "Our Products",
-    link: "/products",
+    link: "/#products",
   },
   {
     name: "Why Choose Us",
-    link: "/choose",
+    link: "/#choose",
   },
   {
     name: "FAQ",
-    link: "/faq",
+    link: "/#faq",
   }
 ];
 
@@ -63,16 +64,15 @@ const Hero = () => {
   }, [active]);
 
   return (
-    <div>
+    <div style={{
+      backgroundImage: active === 0 ?  "url('/hero.png')" : active === 1 ? "url('/hero1.png')" : "url('/hero2.png')",
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      // dark overlay
+    }} className="bg-black bg-opacity-75">
       <div
-        style={{
-          backgroundImage: active === 0 ?  "url('/hero.png')" : active === 1 ? "url('/hero1.png')" : "url('/hero2.png')",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          // dark overlay
-        }}
-        className="h-[100vh] w-[98.95vw] relative bg-black bg-opacity-75"
+        className="h-[100vh] w-[98.95vw] relative bg-gradient-to-b from-black to-transparent"
       >
         <div
           className={`w-full bg-white  ${
@@ -191,7 +191,7 @@ const Hero = () => {
           <div className="flex h-full overflow-hidden">
             {navItems.map((item, index) => {
               return (
-                <div key={index} className="flex flex-col items-center group">
+                <Link href={item.link} key={index} className="flex flex-col items-center group">
                   <div
                     key={index}
                     className="h-full group-hover:h-[65%] transition-all duration-[600ms] ease-in-out cursor-pointer"
@@ -202,7 +202,7 @@ const Hero = () => {
                         expand
                           ? "min-h-[6rem] text-white"
                           : "min-h-[4.5rem] text-[#444444]"
-                      } group-hover:text-[#015E37] transition-all duration-[600ms] ease-in-out flex justify-center items-center`}
+                      } group-hover:text-[#79BC28] transition-all duration-[600ms] ease-in-out flex justify-center items-center`}
                     >
                       {item.name === "Brochure" && (
                         <svg
@@ -227,9 +227,9 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="w-full flex justify-center">
-                      <div className="rounded-full h-[0.65rem] w-[0.65rem] bg-[#015E37]"></div>
+                      <div className="rounded-full h-[0.65rem] w-[0.65rem] bg-[#79BC28]"></div>
                     </div>
-                </div>
+                </Link>
               );
             })}
             <div className="h-full px-5 flex justify-center items-center font-semibold text-[1rem] bg-[#76B728] hover:bg-[#036B46] text-white transition-all duration-[600ms] ease-in-out cursor-pointer ml-3">

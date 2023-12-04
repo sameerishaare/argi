@@ -10,7 +10,7 @@ import choose3 from "../public/choose3.svg";
 
 const Choose = () => {
   return (
-    <div className="flex flex-col-reverse lg:flex-row jsutify-center items-center px-[1rem] bg-[#F5F8ED] py-[0rem]">
+    <div id="choose" className="flex flex-col-reverse lg:flex-row jsutify-center items-center px-[1rem] bg-[#F5F8ED] py-[0rem]">
       <div className="basis-3/5 grid grid-cols-2 scale-90">
         <div className="border-r border-b pt-[3rem] pr-[3rem] pb-[1.25rem]">
           <div className="flex flex-row items-center">

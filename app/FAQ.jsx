@@ -27,9 +27,9 @@ const faqList = [
 ]
 
 const FAQ = () => {
-    const [question, setQuestion] = useState(0);
+    const [question, setQuestion] = useState([]);
     return (
-        <div className='flex  flex-col lg:flex-row  justify-center pb-[4rem]'>
+        <div id="faq" className='flex  flex-col lg:flex-row  justify-center pb-[4rem]'>
             <div className="basis-3/5 mx-4 my-5 ms-5 p-4">
                 <div className="my-3">
                     <div className="text-2xl text-green-700 font-semibold">FAQ</div>
@@ -39,16 +39,16 @@ const FAQ = () => {
                     {faqList.map((item, index) => {
                         return(
                             <div key={index} onClick={()=>{
-                                if(question === index){
-                                    setQuestion(-1)
+                                if(question.includes(index)){
+                                    setQuestion(question.filter((item)=>item !== index))
                                 }else{
-                                    setQuestion(index)
+                                    setQuestion([...question, index]);
                                 }
                             }} className='bg-[#F8F5F5] py-[1rem] px-[1.5rem] rounded-lg mt-3 cursor-pointer'>
                                 <div className='flex justify-between items-center transition-all duration-300 ease-in-out'>
                                     <span className='text-[#2C2C2C] text-[1.25rem]'>{item.question}</span>
                                     {
-                                        question === index ? (<svg xmlns="http://www.w3.org/2000/svg" width="32" height="5" viewBox="0 0 32 5" fill="none" className='scale-75 cursor-pointer'>
+                                        question.includes(index) ? (<svg xmlns="http://www.w3.org/2000/svg" width="32" height="5" viewBox="0 0 32 5" fill="none" className='scale-75 cursor-pointer'>
                                         <path d="M32 4.83145H25.3176H18.6353L13.302 4.83141L0 4.83145V7.62939e-05H13.302L18.6353 0L32 7.62939e-05V4.83145Z" fill="black"/>
                                       </svg>) 
                                         : (<svg onClick={()=>{
@@ -58,14 +58,14 @@ const FAQ = () => {
                                         </svg>)
                                     }
                                 </div>
-                                {question === index && <div className='text-[#036B46] text-[1.15rem] mt-3 font-thin'>{item.answer}</div>}
+                                {question.includes(index) && <div className='text-[#036B46] text-[1.15rem] mt-3 font-thin'>{item.answer}</div>}
                             </div>
                         )
                     })}
                 </div>
             </div>
             <div className="basis-2/5">
-                <Image src={question >= 0 ? faqList[question]?.image : "/faq.svg"} width={600} height={1000} alt='' />
+                <Image src={question.length > 0 ? faqList[question[question.length-1]]?.image : "/faq.svg"} width={600} height={1000} alt='' />
             </div>
         </div>
     )

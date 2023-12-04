@@ -33,7 +33,7 @@ const Counter = () => {
     }
   }, [isIntersecting]);
     return (
-        <div className='flex flex-col md:flex-row gap-5 bg-[#036B46] py-5 justify-center items-center'>
+        <div id="products" className='flex flex-col md:flex-row gap-5 bg-[#036B46] py-5 justify-center items-center'>
 
 
             <div className="basis-1/4 flex  justify-center">

@@ -27,12 +27,12 @@ const Footer = () => {
 
                 >
                     <div className="col-span-2   flex  flex-row  ">
-                        <div className="basis-1/2">
+                        <div className="basis-1/3">
                             <Image src={'/footer-logo.png'} alt="iconlocation" width={250} height={250} className='ml-[2rem]' />
                             <div className="ml-8 mt-1">
                                 Where Innovation Meets<br/> Growth.
                             </div>
-                            <div className="flex gap-5 justify-center items-center ml-[-5rem] mt-[4rem] scale-[135%]">
+                            <div className="flex gap-5 justify-center items-center ml-[4.65rem] mt-[4rem] scale-[135%]">
                                 <Image src={iso} alt="iconlocation" width={90} height={20} />
                                 <div className="">
                                     <div className="">
@@ -88,9 +88,9 @@ const Footer = () => {
 
 
                         </div>
-                        <div className="flex flex-col gap-2 basis-1/2 mt-7 scale-110">
+                        <div className="flex flex-col gap-2 mt-7 scale-110">
                             <div className=" font-semibold ">We are available on</div>
-                            <div className="flex gap-3 scale-110 ml-[1.25rem]">
+                            <div className="flex gap-3 ml-[-0rem]">
                                 <Image src={iconinsta} alt="iconlocation" width={25} height={20} />
                                 <Image src={iconface} alt="iconlocation" width={25} height={20} />
                                 <Image src={iconwhat} alt="iconlocation" width={25} height={20} />
