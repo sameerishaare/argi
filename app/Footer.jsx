@@ -12,6 +12,7 @@ import iso from '../public/iso.svg'
 import google from '../public/google.svg'
 import starone from '../public/starone.svg'
 import startwo from '../public/startwo.svg'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -56,11 +57,11 @@ const Footer = () => {
 
                         <div className="flex flex-col  mx-auto  gap-3 scale-110 mt-5">
                             <div className="font-semibold text-xl">Navigation</div>
-                            <div className="">Home</div>
-                            <div className="">About Us</div>
-                            <div className="">Our Products</div>
-                            <div className="">Why Choose Us</div>
-                            <div className="">FAQ</div>
+                            <Link href="#home" className="hover:text-[#79BC28]">Home</Link>
+                            <Link href="#about-us" className="hover:text-[#79BC28]">About Us</Link>
+                            <Link href="#products" className="hover:text-[#79BC28]">Our Products</Link>
+                            <Link href="#choose" className="hover:text-[#79BC28]">Why Choose Us</Link>
+                            <Link href="#faq" className="hover:text-[#79BC28]">FAQ</Link>
 
                         </div>
                     </div>
@@ -72,15 +73,15 @@ const Footer = () => {
                         <div className="flex flex-col gap-3 w-[75%] scale-[110%] mt-3">
                             <div className="font-semibold text-lg mb-1">Contact us</div>
                             <div className=" flex  gap-2 mb-2 ">
-                                <Image src={iconphone} alt="iconlocation" width={140} height={20} />
+                                <Image className='hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer' src={iconphone} alt="iconlocation" width={140} height={20} />
                             </div>
                             <div className=" flex  gap-2 ">
 
-                                <Image src={iconmess} alt="iconlocation" width={25} height={20} />
+                                <Image className='hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer' src={iconmess} alt="iconlocation" width={25} height={20} />
                                 <div className="">agritycropscience@gmail.com</div>
                             </div> <div className=" flex items-start  gap-2 ">
 
-                                <Image src={iconlocation} alt="iconlocation" width={25} height={20} />
+                                <Image className='hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer' src={iconlocation} alt="iconlocation" width={25} height={20} />
                                 <div className="">Revenue Survey No. 916/1,
                                     Plot No. 6, Millennium Park-2,
                                     At. Navagadh (Guj.)</div>
@@ -91,10 +92,10 @@ const Footer = () => {
                         <div className="flex flex-col gap-2 mt-7 scale-110">
                             <div className=" font-semibold ">We are available on</div>
                             <div className="flex gap-3 ml-[-0rem]">
-                                <Image src={iconinsta} alt="iconlocation" width={25} height={20} />
-                                <Image src={iconface} alt="iconlocation" width={25} height={20} />
-                                <Image src={iconwhat} alt="iconlocation" width={25} height={20} />
-                                <Image src={iconlink} alt="iconlocation" width={25} height={20} />
+                                <Image className='hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer' src={iconinsta} alt="iconlocation" width={25} height={20} />
+                                <Image className='hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer' src={iconface} alt="iconlocation" width={25} height={20} />
+                                <Image className='hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer' src={iconwhat} alt="iconlocation" width={25} height={20} />
+                                <Image className='hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer' src={iconlink} alt="iconlocation" width={25} height={20} />
                             </div>
                             <div className="mt-4">Working Hours</div>
                             <div className="">Monday to Saturday 09:30 AM To 07:00 PM</div>
@@ -107,7 +108,7 @@ const Footer = () => {
             </div>
 
 
-            <div className="flex justify-center items-center text-black py-2">Agrity Crop Science ©2015-23 | All Rights Reserved</div>
+            <div className="flex justify-center items-center text-black py-2">Agrity Crop Science ©2013-23 | All Rights Reserved</div>
 
         </div>
     )
