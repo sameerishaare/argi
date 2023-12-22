@@ -19,12 +19,13 @@ export default function Home() {
       <Loader />
       <MobileNav />
       <Hero/>
+      <Hero />
       <AboutPage />
       <Counter />
       <OurProduct />
       <Choose />
       <FAQ />
-      <Footer/>
+      <Footer />
     </>
   )
 }
