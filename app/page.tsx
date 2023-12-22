@@ -16,13 +16,13 @@ export default function Home() {
   return (
     <>
       <Loader />
-      <Hero/>
+      <Hero />
       <AboutPage />
       <Counter />
       <OurProduct />
       <Choose />
       <FAQ />
-      <Footer/>
+      <Footer />
     </>
   )
 }
