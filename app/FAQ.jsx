@@ -45,18 +45,23 @@ const FAQ = () => {
                                     setQuestion(index)
                                 }
                             }} className='bg-[#F8F5F5] py-[1rem] px-[1.5rem] rounded-lg mt-3 cursor-pointer'>
+
+
                                 <div className='flex justify-between items-center transition-all duration-300 ease-in-out'>
                                     <span className='text-[#2C2C2C] text-[1.25rem]'>{item.question}</span>
-                                    {
-                                        question === index ? (<svg xmlns="http://www.w3.org/2000/svg" width="32" height="5" viewBox="0 0 32 5" fill="none" className='scale-75 cursor-pointer'>
-                                            <path d="M32 4.83145H25.3176H18.6353L13.302 4.83141L0 4.83145V7.62939e-05H13.302L18.6353 0L32 7.62939e-05V4.83145Z" fill="black" />
-                                        </svg>)
-                                            : (<svg onClick={() => {
-                                                setQuestion(index)
-                                            }} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" className='scale-75 cursor-pointer' fill="none">
-                                                <path d="M32 18.4471H18.6353V32H13.302V18.4471H0V13.6157H13.302V0H18.6353V13.6157H32V18.4471Z" fill="#2C2C2C" />
-                                            </svg>)
-                                    }
+                                    <span>    {
+                                        question === index ? (
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="3" viewBox="0 0 16 3" fill="none" className='cursor-pointer'>
+                                                <path d="M16 2.73119H12.609H9.21767L6.10833 2.73116L0 2.73119V0.000121117H6.10833L9.21767 0L16 0.000121117V2.73119Z" fill="black" />
+                                            </svg>
+                                        ) : (
+                                            <svg onClick={() => { setQuestion(index) }} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" className='cursor-pointer' fill="none">
+                                                <path d="M16 9.22366H9.21767V16H6.10833V9.22366H0V6.80783H6.10833V0H9.21767V6.80783H16V9.22366Z" fill="#2C2C2C" />
+                                            </svg>
+                                        )
+                                    }</span>
+
+
                                 </div>
                                 {question === index && <div className='text-[#036B46] text-[1.15rem] mt-3 font-thin'>{item.answer}</div>}
                             </div>

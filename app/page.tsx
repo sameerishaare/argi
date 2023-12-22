@@ -15,14 +15,14 @@ export default function Home() {
   }, [])
   return (
     <>
-      <Loader />
+      {/* <Loader />
       <Hero />
       <AboutPage />
       <Counter />
-      <OurProduct />
+      <OurProduct /> */}
       <Choose />
       <FAQ />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
