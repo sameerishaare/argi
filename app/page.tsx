@@ -7,6 +7,7 @@ import Hero from "./Hero"
 import FAQ from "./FAQ"
 import Footer from "./Footer"
 import Loader from "./Loader"
+import MobileNav from "./MobileNav"
 import { use, useEffect } from "react"
 
 export default function Home() {
@@ -15,7 +16,9 @@ export default function Home() {
   }, [])
   return (
     <>
-      {/* <Loader />
+      <Loader />
+      <MobileNav />
+      <Hero />
       <Hero />
       <AboutPage />
       <Counter />
