@@ -28,7 +28,7 @@ const MobileNav = () => {
     const [openMobileOpen, setOpenMobileOpen] = useState(false);
   return (
     <>
-        <div className="w-full min-h-[3rem] absolute top-0 z-[300]">
+        <div className="w-full min-h-[3rem] absolute top-0 z-[300] md:hidden">
           <div className="w-full flex items-center justify-between pr-4">
             <svg
               className=""
@@ -191,7 +191,7 @@ const MobileNav = () => {
             </div>
           </div>
         </div>
-        <div className={`fixed h-[100vh] bg-black bg-opacity-25 top-0 right-0 z-[301] ${openMobileOpen ? "w-full" : "max-w-0"} transition-all duration-300 ease-in-out`}>
+        <div className={`fixed h-[100vh] bg-black bg-opacity-25 top-0 right-0 z-[301] ${openMobileOpen ? "w-full" : "max-w-0"} transition-all duration-300 ease-in-out md:hidden`}>
           <div className={`h-[100vh] max-w-[24rem] bg-[#036B46] transition-all duration-300 ease-in-out`}>
             <div className="w-full flex items-center justify-between pr-4">
                 <svg
