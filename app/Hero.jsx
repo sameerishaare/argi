@@ -80,7 +80,7 @@ const Hero = () => {
         backgroundRepeat: "no-repeat",
         // dark overlay
       }}
-      className="bg-black bg-opacity-75"
+      className="bg-black bg-opacity-75 max-w-[98vw]"
     >
       <div className="h-[100vh] w-[98.95vw] relative bg-gradient-to-b from-black to-transparent">
         <div
@@ -293,7 +293,7 @@ const Hero = () => {
             <br />
             <i>Revolution</i>
           </p>
-          <p className="text-white text-[2rem] font-bold md:hidden">
+          <p className="text-white text-[1.5rem] font-bold md:hidden">
             Cultivating Growth:
             <br />
             <i>Agropharma&apos;s</i>
@@ -301,7 +301,7 @@ const Hero = () => {
             <i> Sustainable Revolution</i>
           </p>
           <div className="">
-            <button className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4">
+            <button className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90">
               <svg
                 className="h-6 w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -340,7 +340,7 @@ const Hero = () => {
             <br />
             <i>Revolution</i>
           </p>
-          <p className="text-white text-[2rem] font-bold md:hidden">
+          <p className="text-white text-[1.5rem] font-bold md:hidden">
             Cultivating Growth:
             <br />
             <i>Agropharma&apos;s</i>
@@ -348,7 +348,7 @@ const Hero = () => {
             <i> Sustainable Revolution</i>
           </p>
           <div className="">
-            <button className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4">
+            <button className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90">
               <svg
                 className="h-6 w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -387,7 +387,7 @@ const Hero = () => {
             <br />
             <i>Revolution</i>
           </p>
-          <p className="text-white text-[2rem] font-bold md:hidden">
+          <p className="text-white text-[1.5rem] font-bold md:hidden">
             Cultivating Growth:
             <br />
             <i>Agropharma&apos;s</i>
@@ -395,7 +395,7 @@ const Hero = () => {
             <i> Sustainable Revolution</i>
           </p>
           <div className="">
-            <button className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4">
+            <button className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90">
               <svg
                 className="h-6 w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"

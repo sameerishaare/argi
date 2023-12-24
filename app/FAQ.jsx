@@ -32,10 +32,10 @@ const FAQ = () => {
 
 
         <div id="faq" className='flex  flex-col lg:flex-row  justify-center pb-[4rem]'>
-            <div className="basis-3/5 mx-4 my-5 ms-5 p-4">
+            <div className="basis-3/5 mx-4 my-5 ms-5 p-4 max-md:mx-2 max-md:my-2">
                 <div className="my-3">
-                    <div className="text-2xl text-green-700 font-semibold">FAQ</div>
-                    <div className="text-3xl mt-2 mb-4 text-gray-700 font-semibold">Frequently Asked <span className='text-green-700 italic'>Questions</span>  </div>
+                    <div className="text-2xl text-green-700 font-semibold max-md:text-xl max-md:font-normal">FAQ</div>
+                    <div className="text-3xl mt-2 mb-4 text-gray-700 font-semibold max-md:text-2xl max-md:font-normal">Frequently Asked <span className='text-green-700 italic'>Questions</span>  </div>
                 </div>
                 <div className='w-full mt-8'>
                     {faqList.map((item, index) => {
@@ -44,11 +44,11 @@ const FAQ = () => {
                                 if (question !== index) {
                                     setQuestion(index)
                                 }
-                            }} className='bg-[#F8F5F5] py-[1rem] px-[1.5rem] rounded-lg mt-3 cursor-pointer'>
+                            }} className='bg-[#F8F5F5] py-[1rem] px-[1.5rem] rounded-lg mt-3 cursor-pointer max-md:px-[1rem]'>
 
 
                                 <div className='flex justify-between items-center transition-all duration-300 ease-in-out'>
-                                    <span className='text-[#2C2C2C] text-[1.25rem]'>{item.question}</span>
+                                    <span className='text-[#2C2C2C] text-[1.25rem] max-md:text-[0.75rem]'>{item.question}</span>
                                     <span>    {
                                         question === index ? (
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="3" viewBox="0 0 16 3" fill="none" className='cursor-pointer'>
@@ -63,7 +63,7 @@ const FAQ = () => {
 
 
                                 </div>
-                                {question === index && <div className='text-[#036B46] text-[1.15rem] mt-3 font-thin'>{item.answer}</div>}
+                                {question === index && <div className='text-[#036B46] text-[1.15rem] mt-3 font-thin max-md:text-[0.75rem]'>{item.answer}</div>}
                             </div>
                         )
                     })}
@@ -72,7 +72,7 @@ const FAQ = () => {
             <div className="basis-2/5">
                 <Image
                     src={question >= 0 ? faqList[question]?.image : "/faq.svg"}
-                    className="w-full h-[22rem]  md:h-full object-cover" width={500} height={500}
+                    className="w-full h-[22rem]  md:h-full object-cover max-md:h-[17rem]" width={500} height={500}
                     alt=''
                 />
             </div>

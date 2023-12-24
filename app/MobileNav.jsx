@@ -133,8 +133,8 @@ const MobileNav = () => {
               />
             </svg>
             <div className="flex items-center">
-              <button className="bg-[#76B728] rounded-full flex justify-center items-center py-[0.375rem] px-[1.125rem]">
-                <svg className="mr-2" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+              <button className="bg-[#76B728] rounded-full flex justify-center items-center py-[0.375rem] px-[1rem]">
+                <svg className="mr-2" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 18 19" fill="none">
                   <g clip-path="url(#clip0_263_281)">
                     <path d="M8.46344 13.4179C8.60587 13.5596 8.79886 13.6401 9.00019 13.6401C9.20082 13.6401 9.39381 13.5597 9.53679 13.4179L13.6814 9.27146C13.8985 9.0556 13.9637 8.72837 13.846 8.44421C13.7287 8.16131 13.4517 7.97595 13.1454 7.97595H11.9259V1.25822C11.9259 0.83942 11.5863 0.5 11.1675 0.5H6.83273C6.41393 0.5 6.07377 0.83942 6.07377 1.25822V7.97595H4.85422C4.54746 7.97595 4.27091 8.16131 4.15366 8.44421C4.03589 8.72837 4.10111 9.0556 4.31744 9.27146L8.46344 13.4179Z" fill="white"/>
                     <path d="M15.8506 15.5137H2.15043C1.32568 15.5137 0.657227 16.1819 0.657227 17.0068C0.657227 17.8315 1.32572 18.5 2.15043 18.5H15.8506C16.6753 18.5 17.3438 17.8315 17.3438 17.0068C17.3438 16.1819 16.6753 15.5137 15.8506 15.5137Z" fill="white"/>
@@ -145,9 +145,9 @@ const MobileNav = () => {
                     </clipPath>
                   </defs>
                 </svg>
-                <h1 className="text-white  text-[0.875rem]">Brochure</h1>
+                <h1 className="text-white  text-[0.75rem]">Brochure</h1>
               </button>
-              <svg className="mx-5" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+              <svg className="mx-2 max-md:scale-90" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
                 <circle cx="16.5" cy="16.5" r="16.5" fill="white"/>
                 <path d="M0 16.5C0 25.5984 7.40162 33 16.5 33C25.5984 33 33 25.5984 33 16.5C33 7.40162 25.5984 0 16.5 0C7.40162 0 0 7.40162 0 16.5ZM6.875 12.2238C6.875 11.088 7.28475 9.9495 8.151 9.08463L10.3606 6.875L14.7111 11.2255L11.8635 14.0731C13.2784 17.5945 15.675 19.8949 18.9269 21.1365L21.7745 18.2889L26.125 22.6394L23.9154 24.849C23.0505 25.7153 21.912 26.125 20.7762 26.125C14.9462 26.125 6.875 18.502 6.875 12.2238Z" fill="#00C17D"/>
               </svg>
@@ -155,7 +155,7 @@ const MobileNav = () => {
                 onClick={() => {
                   setOpenMobileOpen(true);
                 }}
-                className="cursor-pointer"
+                className="cursor-pointer max-md:scale-90"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -310,7 +310,9 @@ const MobileNav = () => {
                     navItems.map((item, index)=>{
                         return(
                             <div className='pl-[0.75rem] border-b-[1px] border-[#999] py-[0.69rem]'>
-                                <Link href={item.link} className='text-[1.5rem] text-[#EBEAEA]'>{item.name}</Link>
+                                <Link onClick={()=>{
+                                    setOpenMobileOpen(false)
+                                }} href={item.link} className='text-[1.5rem] text-[#EBEAEA]'>{item.name}</Link>
                             </div>
                         )
                     })
@@ -331,7 +333,7 @@ const MobileNav = () => {
               </button>
             </div>
             <div className='w-full flex justify-center items-center'>
-              <Link href='/' className='text-white underline hover:no-underline text-[1.25rem] mt-[20rem]'>Contact us</Link>
+              <Link href='/' className={`text-white underline hover:no-underline text-[1.25rem] mt-[20rem] ${!openMobileOpen && "hidden"}`}>Contact us</Link>
             </div>
           </div>
         </div>

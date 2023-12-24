@@ -74,7 +74,7 @@ const OurProduct = () => {
                     <Image src={prod3} alt="Picture of the author" width={500} height={500} />
                 </div> */}
             </div>
-            <div className='mt-[1.28rem]'>
+            <div className='mt-[1.28rem] md:hidden'>
                 <div className="overflow-hidden max-w-[22.8rem] max-h-[15rem] group border rounded-2xl relative">
                     <Image src={'/beetle.png'} alt="Picture of the author" width={400} height={500} className='w-full h-full object-cover group-hover:rotate-3 group-hover:scale-110 transition-all duration-500 ease-in-out' />
                     <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Insecticides</h1>
@@ -86,7 +86,7 @@ const OurProduct = () => {
                     </button>
                 </div>
             </div>
-            <div className='mt-[1.28rem]'>
+            <div className='mt-[1.28rem] md:hidden'>
                 <div className="overflow-hidden max-w-[22.8rem] max-h-[15rem] group border rounded-2xl relative">
                     <Image src={'/farm.png'} alt="Picture of the author" width={400} height={500} className='w-full h-full object-cover group-hover:rotate-3 group-hover:scale-110 transition-all duration-500 ease-in-out' />
                     <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Herbicide / weedicides</h1>
@@ -98,7 +98,7 @@ const OurProduct = () => {
                     </button>
                 </div>
             </div>
-            <div className='mt-[1.28rem]'>
+            <div className='mt-[1.28rem] md:hidden'>
                 <div className="overflow-hidden max-w-[22.8rem] max-h-[15rem] group border rounded-2xl relative">
                     <Image src={'/grape.png'} alt="Picture of the author" width={400} height={500} className='w-full h-full object-cover group-hover:rotate-3 group-hover:scale-110 transition-all duration-500 ease-in-out' />
                     <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Fungicides</h1>
@@ -110,7 +110,7 @@ const OurProduct = () => {
                     </button>
                 </div>
             </div>
-            <div className='mt-[1.28rem]'>
+            <div className='mt-[1.28rem] md:hidden'>
                 <div className="overflow-hidden max-w-[22.8rem] max-h-[15rem] group border rounded-2xl relative">
                     <Image src={'/ourlongmobile.png'} alt="Picture of the author" width={500} height={500} className='w-full h-full object-cover group-hover:rotate-3 group-hover:scale-110 transition-all duration-500 ease-in-out' />
                     <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Plant Growth Promoter</h1>
