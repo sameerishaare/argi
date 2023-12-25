@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import Footer from "../Footer";
+import MobileNav from "../MobileNav";
 
 const navItems = [
   {
@@ -34,53 +36,117 @@ const insecticides = [
   {
     name: "Saurya",
     link: "/insect/2.png",
-    desc: "INDOXACARB 14.5% SC"
+    desc: "THIAMETHOXAM 75% SG"
   },
   {
     name: "RING TARA PRO",
     link: "/insect/3.png",
-    desc: "INDOXACARB 14.5% SC"
+    desc: "THIAMETHOXAM 30% FS"
   },
   {
     name: "DETHRIN 11",
     link: "/insect/4.png",
-    desc: "INDOXACARB 14.5% SC"
+    desc: "DELTAMETHRIN 11% EC"
   },
   {
     name: "PROCURE",
     link: "/insect/5.png",
-    desc: "INDOXACARB 14.5% SC"
+    desc: "EMAMECTIN BENZOATE 5% SG"
   },
   {
     name: "Pistal",
     link: "/insect/6.png",
-    desc: "INDOXACARB 14.5% SC"
+    desc: "FIPRONIL 2.92% W/W EC"
   },
   {
-    name: "Wanted",
+    name: "Adhira",
     link: "/insect/7.png",
-    desc: "INDOXACARB 14.5% SC"
+    desc: "EMAMECTIN BENZOATE 1.9% EC"
   },
   {
-    name: "Wanted",
+    name: "Circle",
     link: "/insect/8.png",
-    desc: "INDOXACARB 14.5% SC"
+    desc: "CYPERMETHRIN 25% EC"
   },
   {
-    name: "Wanted",
+    name: "BULLET-350",
     link: "/insect/9.png",
-    desc: "INDOXACARB 14.5% SC"
+    desc: "Neem Kernel Based EC Containing Azadirachtin 0.3% w/w min (3000 ppm)"
   },
   {
-    name: "Wanted",
+    name: "AC-PEIDE",
     link: "/insect/10.png",
-    desc: "INDOXACARB 14.5% SC"
+    desc: "Acetamiprid 20% SP"
   },
   {
-    name: "Wanted",
+    name: "Adhira",
     link: "/insect/11.png",
-    desc: "INDOXACARB 14.5% SC"
+    desc: "EMAMECTIN BENZOATE 1.9% EC"
   },
+]
+
+const herbicides = [
+  {
+    name: "TEJ SUPER",
+    link: "/herb/1.png",
+    desc: "FENOXAPROP-P-ETHYL 10% EC"
+  },
+  {
+    name: "Agrity-71 (Systemic Herbicide)",
+    link: "/herb/2.png",
+    desc: "Ammonium Salt of Glyphosate 71% SG"
+  },
+  {
+    name: "PARAMOUNT",
+    link: "/herb/3.png",
+    desc: "PARAQUAT DICHLORIDE 24% SL"
+  },
+  {
+    name: "GOLD",
+    link: "/herb/4.png",
+    desc: "Oxyfluorfen 23.5% EC"
+  },
+  {
+    name: "AGRIPENDI",
+    link: "/herb/5.png",
+    desc: "PENDIMETHALIN 30% EC"
+  },
+  {
+    name: "Agrip",
+    link: "/herb/6.png",
+    desc: "METSULFURON METHYL 20% WP"
+  },
+  {
+    name: "Agricell",
+    link: "/herb/7.png",
+    desc: "Glyphosate 41% SL"
+  }
+]
+
+const fungicides = [
+  {
+    name: "Tiger-22",
+    link: "/fungicides/1.png",
+    desc: "LIME SULPHUR 22% SC"
+  }, 
+  {
+    name: "Cutoff Plus", 
+    link: "/fungicides/2.png",
+    desc: "HEXACONAZOLE 5% SC"
+  }
+]
+
+const plantGrowthRegulators = [
+  {
+    name: "Alok", 
+    link: "/plant/1.png",
+    desc: "GIBBERELLIC ACID 0.001% SL"
+  },
+  {
+    name: "Speed Up",
+    link: "/plant/2.png",
+    desc: "Humic Acid 95%"
+  }
 ]
 
 const Hero = () => {
@@ -88,6 +154,8 @@ const Hero = () => {
   const [expand, setExpand] = useState(true);
   const [active, setActive] = useState(0);
   const [openMobileOpen, setOpenMobileOpen] = useState(false);
+  const [productType, setProductType] = useState("insecticides");
+  const [products, setProducts] = useState(insecticides);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -122,11 +190,39 @@ const Hero = () => {
     };
   }, [active]);
 
+
+
+  useEffect(() => {
+    const url = window.location.href;
+    const urlSplit = url.split("?=");
+    if (urlSplit[1] === "insecticides") {
+      setProductType("insecticides");
+      setProducts(insecticides);
+    }
+    else if(urlSplit[1] === "herbicides") {
+      setProductType("herbicides");
+      setProducts(herbicides);
+    }
+    else if(urlSplit[1] === "fungicides") {
+      setProductType("fungicides");
+      setProducts(fungicides);
+    }
+    else if(urlSplit[1] === "plant-growth-regulators") {
+      setProductType("plant-growth-regulators");
+      setProducts(plantGrowthRegulators);
+    }
+  }, []);
+
   return (
     <>
       <div
         style={{
-          backgroundImage: "url('/hero.png')",
+          backgroundImage: 
+          productType === "insecticides" ? "url('/insect/hero.png')" : 
+          productType === "herbicides" ? "url('/herb/hero.png')" :
+          productType === "fungicides" ? "url('/fungicides/hero.png')" :
+          productType === "plant-growth-regulators" ? "url('/plant/hero.png')" :
+          "url('/hero.png')",
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -134,7 +230,7 @@ const Hero = () => {
         }}
         className="bg-black bg-opacity-75 max-w-[99vw]"
       >
-        <div className="h-[55vh] w-[98.95vw] relative bg-gradient-to-b from-black to-transparent">
+        <div className="h-[55vh] w-[98.95vw] relative bg-gradient-to-b from-black to-transparent max-md:h-[45vh]">
           <div
             className={`w-full bg-white  ${
               expand
@@ -333,11 +429,19 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="w-full flex justify-center items-center h-[55vh]">
-            <h1 className="text-[3.375rem] text-white mt-20">Insecticides</h1>
+          <div className="w-full flex justify-center items-center h-[55vh] max-md:h-[45vh]">
+            <h1 className="text-[3.375rem] text-white mt-16 max-lg:text-[2rem] max-md:text-[1.5rem]">
+              {
+                productType === "insecticides" ? "Insecticides" :
+                productType === "fungicides" ? "Fungicides" :
+                productType === "herbicides" ? "Herbicide / weedicides" :
+                productType === "plant-growth-regulators" ? "Plant Growth Promoter" : 
+                ""
+              }
+            </h1>
           </div>
-          <div className="w-full px-[15rem]">
-            <div className="rounded-2xl p-[1.5rem] bg-white mt-[-5rem] shadow-xl text-[#5F5F5F] font-thin">
+          <div className="w-full px-[10rem] max-xl:px-[7.5rem] max-lg:px-[5rem] max-md:px-[2rem]">
+            <div className="rounded-2xl p-[1.5rem] bg-white mt-[-5rem] shadow-xl text-[#5F5F5F] font-thin max-lg:text-sm max-md:text-xs max-md:p-[1rem]">
               <b className="text-black font-semibold">Safety Tips :</b> The
               information provided on this website is for reference only. Always
               refer to the product label for an official listing of crops,
@@ -352,11 +456,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <MobileNav/>
       <section
         id="Projects"
-        class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-40 mb-5"
+        class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-40 mb-20 max-md:gap-y-10 max-md:gap-x-5 max-md:mt-36 max-md:mb-20"
       >
-        {insecticides.map((item, index) => {
+        {products.map((item, index) => {
           return(
             <div key={index} class="w-72 bg-white border border-[#00734A] overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <div alt="Product" class="h-80 w-72 object-cover rounded-t-xl">
@@ -406,7 +511,7 @@ const Hero = () => {
                 </svg>
               </div>
               <div className="flex justify-center items-center mt-[-5rem]">
-                <Image src={item.link} alt="product images" className="min-w-[7rem] h-[14rem]" width={85} height={85} />
+                <Image src={item.link} alt="product images" className="max-w-[100%] min-w-[45%] h-[14rem] " width={105} height={85} />
               </div>
             </div>
             <div className="px-5">
@@ -425,6 +530,7 @@ const Hero = () => {
           )
         })}
       </section>
+      <Footer />
     </>
   );
 };
