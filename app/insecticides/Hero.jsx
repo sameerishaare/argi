@@ -32,27 +32,27 @@ const insecticides = [
     desc: "INDOXACARB 14.5% SC"
   },
   {
-    name: "Wanted",
+    name: "Saurya",
     link: "/insect/2.png",
     desc: "INDOXACARB 14.5% SC"
   },
   {
-    name: "Wanted",
+    name: "RING TARA PRO",
     link: "/insect/3.png",
     desc: "INDOXACARB 14.5% SC"
   },
   {
-    name: "Wanted",
+    name: "DETHRIN 11",
     link: "/insect/4.png",
     desc: "INDOXACARB 14.5% SC"
   },
   {
-    name: "Wanted",
+    name: "PROCURE",
     link: "/insect/5.png",
     desc: "INDOXACARB 14.5% SC"
   },
   {
-    name: "Wanted",
+    name: "Pistal",
     link: "/insect/6.png",
     desc: "INDOXACARB 14.5% SC"
   },
@@ -406,7 +406,7 @@ const Hero = () => {
                 </svg>
               </div>
               <div className="flex justify-center items-center mt-[-5rem]">
-                <Image src={item.link} alt="product images" className="w-[6rem] h-[14rem] object-cover" width={85} height={85} />
+                <Image src={item.link} alt="product images" className="min-w-[7rem] h-[14rem]" width={85} height={85} />
               </div>
             </div>
             <div className="px-5">
