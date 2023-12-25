@@ -309,7 +309,7 @@ const MobileNav = () => {
                 {
                     navItems.map((item, index)=>{
                         return(
-                            <div className='pl-[0.75rem] border-b-[1px] border-[#999] py-[0.69rem]'>
+                            <div key={index} className='pl-[0.75rem] border-b-[1px] border-[#999] py-[0.69rem]'>
                                 <Link onClick={()=>{
                                     setOpenMobileOpen(false)
                                 }} href={item.link} className='text-[1.5rem] text-[#EBEAEA]'>{item.name}</Link>

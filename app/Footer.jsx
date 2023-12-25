@@ -733,9 +733,9 @@ const Footer = () => {
             <div className="pt-2 flex flex-col">
                 <h1 className="text-[1rem] text-white">Navigation</h1>
                 {
-                    navItems.map((item)=>{
+                    navItems.map((item, key)=>{
                         return(
-                            <Link href={item.link} className="text-[0.85rem] text-white font-thin mt-[0.5rem]">{item.name}</Link> 
+                            <Link key={key} href={item.link} className="text-[0.85rem] text-white font-thin mt-[0.5rem]">{item.name}</Link> 
                         )
                     })
                 }

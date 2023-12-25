@@ -358,7 +358,7 @@ const Hero = () => {
       >
         {insecticides.map((item, index) => {
           return(
-            <div class="w-72 bg-white border border-[#00734A] overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <div key={index} class="w-72 bg-white border border-[#00734A] overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <div alt="Product" class="h-80 w-72 object-cover rounded-t-xl">
               <div className="h-40 w-72 rounded-b-full bg-[#00734A] flex justify-center">
                 <svg
