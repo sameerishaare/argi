@@ -16,7 +16,7 @@ const Loader = () => {
     }, []);
   return (
     <>
-    {show ? <div className={`fixed top-0 h-[110vh] w-[100vw] bg-[#FFF] z-[500] transition-all duration-300 ease-in-out flex flex-col justify-center items-center pt-[8rem] max-md:pt-[0rem]`}>
+    {show ? <div className={`fixed top-0 h-[110vh] w-[100vw] bg-[#FFF] z-[500] transition-all duration-300 ease-in-out flex flex-col justify-center items-center pt-[4rem] max-md:pt-[0rem]`}>
         <Image src="/Loader.png" alt="Loader" className='max-md:scale-75' height={275} width={275} />
         <div className='w-full flex justify-center items-center mt-12 max-md:mt-0'>
             <h1 className="text-[#007947] text-[2.5rem] font-normal space-x-[0.0625rem] taviraj max-md:text-[1.25rem]">Better Environment</h1>

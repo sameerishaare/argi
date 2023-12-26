@@ -245,7 +245,7 @@ const Hero = () => {
                 </Link>
               );
             })}
-            <div className="h-full px-5 flex justify-center items-center font-semibold text-[1rem] bg-[#76B728] hover:bg-[#036B46] text-white transition-all duration-[600ms] ease-in-out cursor-pointer ml-3">
+            <Link href={"/brochure.pdf"} target="_blank" className="h-full px-5 flex justify-center items-center font-semibold text-[1rem] bg-[#76B728] hover:bg-[#036B46] text-white transition-all duration-[600ms] ease-in-out cursor-pointer ml-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -264,10 +264,10 @@ const Hero = () => {
                 />
               </svg>
               <span>Brochure</span>
-            </div>
+            </Link>
           </div>
           <div className="h-full flex justify-center items-center px-[1rem]">
-            <div className="px-[1.5rem] bg-white rounded-full flex justify-center items-center border-[2px] border-[#79BC28] scale-90 hover:bg-[#E3FFC1] cursor-pointer">
+            <Link href="https://wa.me/919537037616" target="_blank" className="px-[1.5rem] bg-white rounded-full flex justify-center items-center border-[2px] border-[#79BC28] scale-90 hover:bg-[#E3FFC1] cursor-pointer">
               <Image
                 src="/india.png"
                 width={30}
@@ -278,13 +278,13 @@ const Hero = () => {
               <span className="text-[#555] text-[0.9rem] font-normal py-[0.75rem]">
                 +9195370 37616
               </span>
-            </div>
+            </Link>
           </div>
         </div>
         <div
           className={`absolute top-[15rem] ${
-            active === 0 ? "left-[3rem] max-md:left-[1rem]" : "left-[-40rem] opacity-0"
-          } transition-all duration-500 ease-in-out`}
+            active === 0 ? "left-[3rem] max-md:left-[50%] max-md:translate-x-[-50%]" : "left-[-40rem] opacity-0"
+          } transition-all duration-500 ease-in-out max-md:text-center max-md:flex max-md:flex-col max-md:items-center max-md:justify-center`}
         >
           <p className="text-white text-[3rem] font-bold max-md:hidden">
             Cultivating Growth:
@@ -293,15 +293,13 @@ const Hero = () => {
             <br />
             <i>Revolution</i>
           </p>
-          <p className="text-white text-[1.5rem] font-bold md:hidden">
-            Cultivating Growth:
+          <p className="text-white text-[1.75rem] font-bold whitespace-nowrap md:hidden">
+            <b>Better Environment,
             <br />
-            <i>Agropharma&apos;s</i>
-            <br />
-            <i> Sustainable Revolution</i>
+            Better Tomorrow</b>
           </p>
           <div className="">
-            <button className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90">
+            <Link href="https://wa.me/919537037616" target="_blank" className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90">
               <svg
                 className="h-6 w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -325,13 +323,13 @@ const Hero = () => {
                 </defs>
               </svg>
               <span>Contact us</span>
-            </button>
+            </Link>
           </div>
         </div>
         <div
           className={`absolute top-[15rem] ${
-            active === 1 ? "left-[3rem] max-md:left-[1rem]" : "left-[-40rem] opacity-0"
-          } transition-all duration-500 ease-in-out`}
+            active === 1 ? "left-[3rem] max-md:left-[50%] max-md:translate-x-[-50%]" : "left-[-40rem] opacity-0"
+          } transition-all duration-500 ease-in-out max-md:text-center max-md:flex max-md:flex-col max-md:items-center max-md:justify-center`}
         >
           <p className="text-white text-[3rem] font-bold max-md:hidden">
             Cultivating Growth:
@@ -340,15 +338,13 @@ const Hero = () => {
             <br />
             <i>Revolution</i>
           </p>
-          <p className="text-white text-[1.5rem] font-bold md:hidden">
-            Cultivating Growth:
+          <p className="text-white text-[1.75rem] font-bold whitespace-nowrap md:hidden">
+            <b>Better Environment,
             <br />
-            <i>Agropharma&apos;s</i>
-            <br />
-            <i> Sustainable Revolution</i>
+            Better Tomorrow</b>
           </p>
           <div className="">
-            <button className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90">
+            <Link href="https://wa.me/919537037616" target="_blank" className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90">
               <svg
                 className="h-6 w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -372,13 +368,13 @@ const Hero = () => {
                 </defs>
               </svg>
               <span>Contact us</span>
-            </button>
+            </Link>
           </div>
         </div>
         <div
           className={`absolute top-[15rem] ${
-            active === 2 ? "left-[3rem] max-md:left-[1rem]" : "left-[-40rem] opacity-0"
-          } transition-all duration-500 ease-in-out`}
+            active === 2 ? "left-[3rem] max-md:left-[50%] max-md:translate-x-[-50%]" : "left-[-40rem] opacity-0"
+          } transition-all duration-500 ease-in-out max-md:text-center max-md:flex max-md:flex-col max-md:items-center max-md:justify-center`}
         >
           <p className="text-white text-[3rem] font-bold max-md:hidden">
             Cultivating Growth:
@@ -387,15 +383,13 @@ const Hero = () => {
             <br />
             <i>Revolution</i>
           </p>
-          <p className="text-white text-[1.5rem] font-bold md:hidden">
-            Cultivating Growth:
+          <p className="text-white text-[1.75rem] font-bold whitespace-nowrap md:hidden">
+            <b>Better Environment,
             <br />
-            <i>Agropharma&apos;s</i>
-            <br />
-            <i> Sustainable Revolution</i>
+            Better Tomorrow</b>
           </p>
           <div className="">
-            <button className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90">
+            <Link href="https://wa.me/919537037616" target="_blank" className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90">
               <svg
                 className="h-6 w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -419,7 +413,7 @@ const Hero = () => {
                 </defs>
               </svg>
               <span>Contact us</span>
-            </button>
+            </Link>
           </div>
         </div>
         <div className="absolute w-full bottom-5">

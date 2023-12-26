@@ -74,7 +74,7 @@ const Counter = () => {
 
                 </div>
                 <div className="flex-col text-white ms-2">
-                    <div className="font-bold text-2xl">{startCount ? <CountUp end={40} /> : "0"}</div>
+                    <div className="font-bold text-2xl">{startCount ? <CountUp end={20} /> : "0"}</div>
                     <div className="">Well Trained & Dedicated Team</div>
                 </div>
             </div>

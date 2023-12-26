@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const navItems = [
     {
@@ -26,12 +26,32 @@ const navItems = [
 
 const MobileNav = () => {
     const [openMobileOpen, setOpenMobileOpen] = useState(false);
+    const [expand, setExpand] = useState(true);
+
+    useEffect(() => {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 10) {
+          setExpand(false);
+        } else {
+          setExpand(true);
+        }
+      });
+      return () => {
+        window.removeEventListener("scroll", () => {
+          if (window.scrollY > 10) {
+            setExpand(false);
+          } else {
+            setExpand(true);
+          }
+        });
+      };
+    }, [expand]);
   return (
     <>
-        <div className="w-full min-h-[3rem] absolute top-0 z-[300] md:hidden">
-          <div className="w-full flex items-center justify-between pr-4">
+        <div className={`w-full top-0 z-[300] ${expand ? "absolute min-h-[3rem]" : "bg-white fixed shadow-xl max-h-[3.5rem]"} transition-all duration-[350ms] ease-linear md:hidden`}>
+          <div className={`w-full flex items-center justify-between pr-4 ${expand ? "" : "mt-[0rem]"}`}>
             <svg
-              className=""
+              className={`${expand ? "" : "h-[50px] w-[70px] border-r transition-all duration-[350ms] ease-linear"}`}
               xmlns="http://www.w3.org/2000/svg"
               width="140"
               height="90"
@@ -133,7 +153,7 @@ const MobileNav = () => {
               />
             </svg>
             <div className="flex items-center">
-              <button className="bg-[#76B728] rounded-full flex justify-center items-center py-[0.375rem] px-[1rem]">
+              <Link href={"/brochure.pdf"} target="_blank" className="bg-[#76B728] rounded-full flex justify-center items-center py-[0.375rem] px-[1rem]">
                 <svg className="mr-2" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 18 19" fill="none">
                   <g clip-path="url(#clip0_263_281)">
                     <path d="M8.46344 13.4179C8.60587 13.5596 8.79886 13.6401 9.00019 13.6401C9.20082 13.6401 9.39381 13.5597 9.53679 13.4179L13.6814 9.27146C13.8985 9.0556 13.9637 8.72837 13.846 8.44421C13.7287 8.16131 13.4517 7.97595 13.1454 7.97595H11.9259V1.25822C11.9259 0.83942 11.5863 0.5 11.1675 0.5H6.83273C6.41393 0.5 6.07377 0.83942 6.07377 1.25822V7.97595H4.85422C4.54746 7.97595 4.27091 8.16131 4.15366 8.44421C4.03589 8.72837 4.10111 9.0556 4.31744 9.27146L8.46344 13.4179Z" fill="white"/>
@@ -146,7 +166,7 @@ const MobileNav = () => {
                   </defs>
                 </svg>
                 <h1 className="text-white  text-[0.75rem]">Brochure</h1>
-              </button>
+              </Link>
               <svg className="mx-2 max-md:scale-90" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
                 <circle cx="16.5" cy="16.5" r="16.5" fill="white"/>
                 <path d="M0 16.5C0 25.5984 7.40162 33 16.5 33C25.5984 33 33 25.5984 33 16.5C33 7.40162 25.5984 0 16.5 0C7.40162 0 0 7.40162 0 16.5ZM6.875 12.2238C6.875 11.088 7.28475 9.9495 8.151 9.08463L10.3606 6.875L14.7111 11.2255L11.8635 14.0731C13.2784 17.5945 15.675 19.8949 18.9269 21.1365L21.7745 18.2889L26.125 22.6394L23.9154 24.849C23.0505 25.7153 21.912 26.125 20.7762 26.125C14.9462 26.125 6.875 18.502 6.875 12.2238Z" fill="#00C17D"/>
@@ -155,7 +175,7 @@ const MobileNav = () => {
                 onClick={() => {
                   setOpenMobileOpen(true);
                 }}
-                className="cursor-pointer max-md:scale-90"
+                className={`cursor-pointer max-md:scale-90 ${expand ? "text-white" : "text-black"}`}
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -165,19 +185,19 @@ const MobileNav = () => {
                 <g clip-path="url(#clip0_68_1274)">
                   <path
                     d="M2 2H22"
-                    stroke="white"
+                    stroke="currentColor"
                     stroke-width="2.5"
                     stroke-linecap="round"
                   />
                   <path
                     d="M2 12H22"
-                    stroke="white"
+                    stroke="currentColor"
                     stroke-width="2.5"
                     stroke-linecap="round"
                   />
                   <path
                     d="M2 22H22"
-                    stroke="white"
+                    stroke="currentColor"
                     stroke-width="2.5"
                     stroke-linecap="round"
                   />
@@ -317,7 +337,7 @@ const MobileNav = () => {
                         )
                     })
                 }
-                <button className="bg-[#76B728] rounded-full flex justify-center items-center py-[0.375rem] px-[1.125rem] mt-[1.37rem] ml-[0.69rem]">
+                <Link href={"/brochure.pdf"} target="_blank" className="bg-[#76B728] rounded-full flex justify-center items-center py-[0.375rem] px-[1.125rem] mt-[1.37rem] ml-[0.69rem]">
                 <svg className="mr-2" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
                   <g clip-path="url(#clip0_263_281)">
                     <path d="M8.46344 13.4179C8.60587 13.5596 8.79886 13.6401 9.00019 13.6401C9.20082 13.6401 9.39381 13.5597 9.53679 13.4179L13.6814 9.27146C13.8985 9.0556 13.9637 8.72837 13.846 8.44421C13.7287 8.16131 13.4517 7.97595 13.1454 7.97595H11.9259V1.25822C11.9259 0.83942 11.5863 0.5 11.1675 0.5H6.83273C6.41393 0.5 6.07377 0.83942 6.07377 1.25822V7.97595H4.85422C4.54746 7.97595 4.27091 8.16131 4.15366 8.44421C4.03589 8.72837 4.10111 9.0556 4.31744 9.27146L8.46344 13.4179Z" fill="white"/>
@@ -330,10 +350,10 @@ const MobileNav = () => {
                   </defs>
                 </svg>
                 <h1 className="text-white  text-[0.875rem]">Brochure</h1>
-              </button>
+              </Link>
             </div>
             <div className='w-full flex justify-center items-center'>
-              <Link href='/' className={`text-white underline hover:no-underline text-[1.25rem] mt-[20rem] ${!openMobileOpen && "hidden"}`}>Contact us</Link>
+              <Link href="https://wa.me/919537037616" target="_blank" className={`text-white underline hover:no-underline text-[1.25rem] mt-[20rem] ${!openMobileOpen && "hidden"}`}>Contact us</Link>
             </div>
           </div>
         </div>

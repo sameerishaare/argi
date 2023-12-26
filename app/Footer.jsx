@@ -140,7 +140,7 @@ const Footer = () => {
                   height={20}
                 />
               </div>
-              <div className=" flex  gap-2 ">
+              <Link href={"mailto:agritycropscience@gmail.com"} target="_blank" className=" flex  gap-2 ">
                 <Image
                   className="hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer"
                   src={iconmess}
@@ -149,8 +149,8 @@ const Footer = () => {
                   height={20}
                 />
                 <div className="">agritycropscience@gmail.com</div>
-              </div>{" "}
-              <div className=" flex items-start  gap-2 ">
+              </Link>{" "}
+              <Link href="https://maps.app.goo.gl/77Pjaui5EDiFTnii9" target="_blank" className=" flex items-start  gap-2 ">
                 <Image
                   className="hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer"
                   src={iconlocation}
@@ -162,39 +162,38 @@ const Footer = () => {
                   Revenue Survey No. 916/1, Plot No. 6, Millennium Park-2, At.
                   Navagadh (Guj.)
                 </div>
-              </div>
+              </Link>
             </div>
             <div className="flex flex-col gap-2 mt-7 scale-110">
               <div className=" font-semibold ">We are available on</div>
               <div className="flex gap-3 ml-[-0rem]">
-                <Image
-                  className="hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer"
-                  src={iconinsta}
-                  alt="iconlocation"
-                  width={25}
-                  height={20}
-                />
-                <Image
-                  className="hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer"
-                  src={iconface}
-                  alt="iconlocation"
-                  width={25}
-                  height={20}
-                />
-                <Image
-                  className="hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer"
-                  src={iconwhat}
-                  alt="iconlocation"
-                  width={25}
-                  height={20}
-                />
-                <Image
-                  className="hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer"
-                  src={iconlink}
-                  alt="iconlocation"
-                  width={25}
-                  height={20}
-                />
+                <Link href="https://www.instagram.com/agrity_crop_science/" target="_blank">
+                    <Image
+                    className="hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer"
+                    src={iconinsta}
+                    alt="iconlocation"
+                    width={25}
+                    height={20}
+                    />
+                </Link>
+                <Link href="https://www.facebook.com/people/Agrity-Crop-Science/61553506395795/" target="_blank">
+                    <Image
+                    className="hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer"
+                    src={iconface}
+                    alt="iconlocation"
+                    width={25}
+                    height={20}
+                    />
+                </Link>
+                <Link href={"https://wa.me/919537037616"} target="_blank">
+                    <Image
+                    className="hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer"
+                    src={iconwhat}
+                    alt="iconlocation"
+                    width={25}
+                    height={20}
+                    />
+                </Link>
               </div>
               <div className="mt-4">Working Hours</div>
               <div className="">Monday to Saturday 09:30 AM To 07:00 PM</div>
@@ -701,21 +700,21 @@ const Footer = () => {
             <div className="mt-3">
                 <h1 className="text-white text-[0.76rem]">Contact Us</h1>
                 <div className="mt-1.5">
-                    <div className="flex items-center">
+                    <Link href="https://wa.me/919537037616" target="_blank" className="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <circle cx="10" cy="10" r="8.59375" fill="white"/>
                             <path d="M0 10C0 15.5142 4.48583 20 10 20C15.5142 20 20 15.5142 20 10C20 4.48583 15.5142 0 10 0C4.48583 0 0 4.48583 0 10ZM4.16667 7.40833C4.16667 6.72 4.415 6.03 4.94 5.50583L6.27917 4.16667L8.91583 6.80333L7.19 8.52917C8.0475 10.6633 9.5 12.0575 11.4708 12.81L13.1967 11.0842L15.8333 13.7208L14.4942 15.06C13.97 15.585 13.28 15.8333 12.5917 15.8333C9.05833 15.8333 4.16667 11.2133 4.16667 7.40833Z" fill="#00C17D"/>
                         </svg>
                         <h1 className="text-white text-[0.75rem] font-thin ml-1">+9195370 37616</h1>
-                    </div>
-                    <div className="flex items-center mt-[0.62rem]">
+                    </Link>
+                    <Link href={"mailto:agritycropscience@gmail.com"} target="_blank" className="flex items-center mt-[0.62rem]">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <circle cx="10" cy="9.5" r="8.59375" fill="white"/>
                             <path d="M10 0C4.47734 0 0 4.47734 0 10C0 15.5227 4.47734 20 10 20C15.5227 20 20 15.5227 20 10C20 4.47734 15.5227 0 10 0ZM15.2734 13.0891C15.2727 13.354 15.1672 13.6078 14.9799 13.7951C14.7926 13.9824 14.5387 14.088 14.2738 14.0887H5.72617C5.46128 14.088 5.20745 13.9824 5.02014 13.7951C4.83283 13.6078 4.72728 13.354 4.72656 13.0891V7.86406L9.99766 10.4938L15.2734 7.91914V13.0891ZM15.2734 6.93359L10.0023 9.50625L4.72656 6.875C4.73664 6.6166 4.8462 6.37209 5.03234 6.19257C5.21847 6.01306 5.46679 5.91243 5.72539 5.91172H14.2738C14.5387 5.91244 14.7924 6.01793 14.9797 6.20516C15.167 6.39238 15.2726 6.64611 15.2734 6.91094V6.93359Z" fill="#00C17D"/>
                         </svg>
                         <h1 className="text-white text-[0.75rem] font-thin ml-1">agritycropscience@gmail.com</h1>
-                    </div>
-                    <div className="flex items-start mt-[0.62rem]">
+                    </Link>
+                    <Link href="https://maps.app.goo.gl/77Pjaui5EDiFTnii9" target="_blank" className="flex items-start mt-[0.62rem]">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <rect width="20" height="20" rx="10" fill="#00C17D"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.706 15.7239C11.9762 14.2446 14.3202 11.1489 14.3202 8.44714C14.3202 5.99105 12.3457 4 9.91008 4C7.47446 4 5.5 5.99105 5.5 8.44714C5.5 11.1489 7.84394 14.2446 9.11417 15.7239C9.53997 16.2198 10.2802 16.2198 10.706 15.7239ZM9.90996 10.3C10.9538 10.3 11.8 9.4538 11.8 8.40996C11.8 7.36613 10.9538 6.51993 9.90996 6.51993C8.86613 6.51993 8.01993 7.36613 8.01993 8.40996C8.01993 9.4538 8.86613 10.3 9.90996 10.3Z" fill="white"/>
@@ -725,7 +724,7 @@ const Footer = () => {
                             Plot No. 6, Millennium Park-2,<br/>
                             At. Navagadh (Guj.).
                         </h1>
-                    </div>
+                    </Link>
                 </div>
             </div>
           </div>
@@ -743,7 +742,8 @@ const Footer = () => {
             <div className="mt-[1rem]">
                 <h1 className="text-white text-[0.823rem] whitespace-nowrap">We are available on</h1>
                 <div className="flex mt-[0.31rem]">
-                    <svg className="mr-[0.62rem]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <Link href="https://www.instagram.com/agrity_crop_science/" target="_blank">
+                        <svg className="mr-[0.62rem]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
     <g clip-path="url(#clip0_68_1461)">
         <circle cx="10" cy="10" r="8" fill="white"/>
         <path d="M11.9141 10C11.9141 11.0571 11.0571 11.9141 10 11.9141C8.94287 11.9141 8.08594 11.0571 8.08594 10C8.08594 8.94287 8.94287 8.08594 10 8.08594C11.0571 8.08594 11.9141 8.94287 11.9141 10Z" fill="#00C17D"/>
@@ -755,20 +755,21 @@ const Footer = () => {
         <rect width="20" height="20" fill="white"/>
         </clipPath>
     </defs>
-                    </svg>
-                    <svg className="mr-[0.62rem]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        </svg>
+                    </Link>
+                    <Link href="https://www.facebook.com/people/Agrity-Crop-Science/61553506395795/" target="_blank">
+                        <svg className="mr-[0.62rem]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#00C17D"/>
                         <path d="M12.5139 10.3909H10.7295V16.928H8.02602V10.3909H6.74023V8.09349H8.02602V6.60681C8.02602 5.54367 8.53103 3.87891 10.7536 3.87891L12.7561 3.88728V6.11731H11.3031C11.0648 6.11731 10.7297 6.23639 10.7297 6.74354V8.09563H12.7501L12.5139 10.3909Z" fill="white"/>
-                    </svg>
-                    <svg className="mr-[0.62rem]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        </svg>
+                    </Link>
+                    <Link href={"https://wa.me/919537037616"} target="_blank">
+                        <svg className="mr-[0.62rem]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#00C17D"/>
                         <path d="M14.4085 5.59201C13.3681 4.54121 11.9864 3.89679 10.5127 3.77499C9.03901 3.65319 7.57029 4.06202 6.37147 4.92774C5.17265 5.79346 4.32266 7.05908 3.97481 8.49631C3.62695 9.93355 3.80414 11.4478 4.47441 12.7659L3.81646 15.9602C3.80963 15.992 3.80944 16.0248 3.81589 16.0567C3.82234 16.0886 3.8353 16.1188 3.85396 16.1454C3.88129 16.1858 3.9203 16.217 3.96578 16.2346C4.01127 16.2523 4.06106 16.2557 4.10851 16.2443L7.23919 15.5022C8.55358 16.1555 10.0571 16.3213 11.4823 15.9701C12.9074 15.6189 14.1618 14.7735 15.0221 13.5842C15.8824 12.395 16.2929 10.9391 16.1806 9.47563C16.0682 8.01214 15.4403 6.63598 14.4085 5.59201ZM13.4324 13.3829C12.7125 14.1008 11.7855 14.5746 10.7821 14.7377C9.77866 14.9008 8.74934 14.7449 7.83919 14.292L7.40282 14.0761L5.48351 14.5306L5.48919 14.5068L5.88692 12.575L5.67328 12.1534C5.20823 11.24 5.04418 10.203 5.20463 9.19069C5.36507 8.17842 5.84178 7.2429 6.56646 6.51814C7.47703 5.60785 8.71187 5.09648 9.99942 5.09648C11.287 5.09648 12.5218 5.60785 13.4324 6.51814C13.4401 6.52704 13.4485 6.53539 13.4574 6.54315C14.3567 7.45578 14.8587 8.68693 14.854 9.96818C14.8493 11.2494 14.3383 12.4769 13.4324 13.3829Z" fill="white"/>
                         <path d="M13.262 11.9664C13.0267 12.3368 12.6552 12.7902 12.1881 12.9027C11.3699 13.1005 10.1142 12.9096 8.55175 11.4527L8.53243 11.4357C7.15857 10.1618 6.80175 9.10161 6.88811 8.2607C6.93584 7.78343 7.33357 7.35161 7.66879 7.06979C7.72179 7.02456 7.78464 6.99235 7.85231 6.97575C7.91998 6.95915 7.9906 6.95861 8.05851 6.97418C8.12643 6.98976 8.18976 7.021 8.24344 7.06542C8.29712 7.10985 8.33966 7.16621 8.36766 7.23002L8.87334 8.36638C8.9062 8.44006 8.91838 8.5213 8.90857 8.60138C8.89876 8.68146 8.86733 8.75735 8.81766 8.82093L8.56198 9.15274C8.50711 9.22126 8.47401 9.30462 8.46692 9.39211C8.45983 9.47959 8.47909 9.5672 8.5222 9.64365C8.66539 9.89479 9.00857 10.2641 9.38925 10.6062C9.81652 10.9925 10.2904 11.3459 10.5904 11.4664C10.6707 11.4992 10.7589 11.5072 10.8438 11.4894C10.9286 11.4715 11.0062 11.4287 11.0665 11.3664L11.3631 11.0675C11.4203 11.0111 11.4915 10.9708 11.5694 10.9509C11.6472 10.9309 11.729 10.9319 11.8063 10.9539L13.0074 11.2948C13.0737 11.3151 13.1344 11.3503 13.185 11.3977C13.2355 11.4451 13.2746 11.5034 13.2992 11.5683C13.3237 11.6331 13.3331 11.7026 13.3267 11.7716C13.3203 11.8406 13.2981 11.9072 13.262 11.9664Z" fill="white"/>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#00C17D"/>
-                        <path d="M15.975 10.8052V14.928H13.5847V11.0815C13.5847 10.1157 13.2396 9.45615 12.3741 9.45615C11.7137 9.45615 11.3213 9.9002 11.1481 10.3302C11.0851 10.4838 11.0689 10.6972 11.0689 10.9127V14.9278H8.67845C8.67845 14.9278 8.71054 8.41316 8.67845 7.7388H11.0691V8.75755C11.0643 8.76558 11.0575 8.77342 11.0532 8.78109H11.0691V8.75755C11.3867 8.26877 11.9533 7.56999 13.2234 7.56999C14.796 7.56999 15.975 8.59748 15.975 10.8052ZM6.17783 4.27344C5.36015 4.27344 4.8252 4.81018 4.8252 5.51537C4.8252 6.20559 5.34464 6.75784 6.14645 6.75784H6.16196C6.99568 6.75784 7.51406 6.20559 7.51406 5.51537C7.4982 4.81018 6.99568 4.27344 6.17783 4.27344ZM4.96727 14.928H7.35684V7.7388H4.96727V14.928Z" fill="white"/>
-                    </svg>
+                        </svg>
+                    </Link>
                 </div>
             </div>
           </div>
@@ -776,7 +777,7 @@ const Footer = () => {
       </div>
 
       <div className="flex justify-center items-center text-[#494949] py-2 max-md:text-[0.625rem]">
-        Agrity Crop Science ©2015-23 | All Rights Reserved
+        Agrity Crop Science ©2013-23 | All Rights Reserved
       </div>
     </div>
   );

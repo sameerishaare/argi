@@ -31,57 +31,132 @@ const insecticides = [
   {
     name: "Wanted",
     link: "/insect/1.png",
-    desc: "INDOXACARB 14.5% SC"
+    desc: "INDOXACARB 14.5% SC",
+    options: [
+      "25 ml",
+      "50 ml",
+      "100 ml",
+      "250 ml",
+      "500 ml",
+    ]
   },
   {
     name: "Saurya",
     link: "/insect/2.png",
-    desc: "THIAMETHOXAM 75% SG"
+    desc: "THIAMETHOXAM 75% SG",
+    options: [
+      "8 gm",
+      "50 gm",
+      "100 gm",
+      "250 gm",
+      "500 gm",
+    ]
   },
   {
     name: "RING TARA PRO",
     link: "/insect/3.png",
-    desc: "THIAMETHOXAM 30% FS"
+    desc: "THIAMETHOXAM 30% FS",
+    options: [
+      "250 ml",
+      "500 ml",
+      "1 ltr",
+    ]
   },
   {
     name: "DETHRIN 11",
     link: "/insect/4.png",
-    desc: "DELTAMETHRIN 11% EC"
+    desc: "DELTAMETHRIN 11% EC",
+    options: [
+      "30 ml",
+      "100 ml",
+      "250 ml",
+      "500 ml",
+      "1 ltr",
+      "5 ltr"
+    ]
   },
   {
     name: "PROCURE",
     link: "/insect/5.png",
-    desc: "EMAMECTIN BENZOATE 5% SG"
+    desc: "EMAMECTIN BENZOATE 5% SG",
+    options: [
+      "50 gm",
+      "100 gm",
+      "250 gm",
+      "500 gm",
+    ]
   },
   {
     name: "Pistal",
     link: "/insect/6.png",
-    desc: "FIPRONIL 2.92% W/W EC"
+    desc: "FIPRONIL 2.92% W/W EC",
+    options: [
+      "30 ml",
+      "100 ml",
+      "250 ml",
+      "500 ml",
+      "1 ltr",
+      "5 ltr"
+    ]
   },
   {
     name: "Adhira",
     link: "/insect/7.png",
-    desc: "EMAMECTIN BENZOATE 1.9% EC"
+    desc: "EMAMECTIN BENZOATE 1.9% EC",
+    options: [
+      "30 ml",
+      "100 ml",
+      "250 ml",
+      "500 ml",
+      "1 ltr",
+      "5 ltr"
+    ]
   },
   {
     name: "Circle",
     link: "/insect/8.png",
-    desc: "CYPERMETHRIN 25% EC"
+    desc: "CYPERMETHRIN 25% EC",
+    options: [
+      "100 ml",
+      "250 ml",
+      "500 ml",
+      "1 ltr",
+    ]
   },
   {
     name: "BULLET-350",
     link: "/insect/9.png",
-    desc: "Neem Kernel Based EC Containing Azadirachtin 0.3% w/w min (3000 ppm)"
+    desc: "Neem Kernel Based EC Containing Azadirachtin 0.3% w/w min (3000 ppm)",
+    options: [
+      "30 ml",
+      "100 ml",
+      "250 ml",
+      "500 ml",
+      "1 ltr",
+    ]
   },
   {
     name: "AC-PEIDE",
     link: "/insect/10.png",
-    desc: "Acetamiprid 20% SP"
+    desc: "Acetamiprid 20% SP",
+    options: [
+      "100 gm",
+      "250 gm",
+      "500 gm",
+      "1 kg",
+    ]
   },
   {
     name: "Adhira",
     link: "/insect/11.png",
-    desc: "EMAMECTIN BENZOATE 1.9% EC"
+    desc: "EMAMECTIN BENZOATE 1.9% EC",
+    options: [
+      "20 ml",
+      "100 ml",
+      "250 ml",
+      "500 ml",
+      "1 ltr",
+    ]
   },
 ]
 
@@ -89,37 +164,72 @@ const herbicides = [
   {
     name: "TEJ SUPER",
     link: "/herb/1.png",
-    desc: "FENOXAPROP-P-ETHYL 10% EC"
+    desc: "FENOXAPROP-P-ETHYL 10% EC",
+    options: [
+      "100 ml",
+      "250 ml",
+      "500 ml",
+      "1 ltr",
+    ]
   },
   {
     name: "Agrity-71 (Systemic Herbicide)",
     link: "/herb/2.png",
-    desc: "Ammonium Salt of Glyphosate 71% SG"
+    desc: "Ammonium Salt of Glyphosate 71% SG",
+    options: [
+      "100 gm",
+    ]
   },
   {
     name: "PARAMOUNT",
     link: "/herb/3.png",
-    desc: "PARAQUAT DICHLORIDE 24% SL"
+    desc: "PARAQUAT DICHLORIDE 24% SL",
+    options: [
+      "250 ml",
+      "500 ml",
+      "1 ltr",
+      "5 ltr",
+    ]
   },
   {
     name: "GOLD",
     link: "/herb/4.png",
-    desc: "Oxyfluorfen 23.5% EC"
+    desc: "Oxyfluorfen 23.5% EC",
+    options: [
+      "50 ml",
+      "100 ml",
+      "250 ml",
+    ]
   },
   {
     name: "AGRIPENDI",
     link: "/herb/5.png",
-    desc: "PENDIMETHALIN 30% EC"
+    desc: "PENDIMETHALIN 30% EC",
+    options: [
+      "30 ml",
+      "100 ml",
+      "250 ml",
+      "500 ml",
+      "1 ltr",
+      "5 ltr"
+    ]
   },
   {
     name: "Agrip",
     link: "/herb/6.png",
-    desc: "METSULFURON METHYL 20% WP"
+    desc: "METSULFURON METHYL 20% WP",
+    options: [
+      "8 gm + 200 ml. (1 Box)"
+    ]
   },
   {
     name: "Agricell",
     link: "/herb/7.png",
-    desc: "Glyphosate 41% SL"
+    desc: "Glyphosate 41% SL",
+    options: [
+      "500 ml",
+      "1 ltr",
+    ]
   }
 ]
 
@@ -127,12 +237,24 @@ const fungicides = [
   {
     name: "Tiger-22",
     link: "/fungicides/1.png",
-    desc: "LIME SULPHUR 22% SC"
+    desc: "LIME SULPHUR 22% SC",
+    options: [
+      "1 ltr",
+      "5 ltr",
+      "10 ltr",
+      "20 ltr"
+    ]
   }, 
   {
     name: "Cutoff Plus", 
     link: "/fungicides/2.png",
-    desc: "HEXACONAZOLE 5% SC"
+    desc: "HEXACONAZOLE 5% SC",
+    options: [
+      "500 ml",
+      "1 ltr",
+      "2.5 ltr",
+      "5 ltr"
+    ]
   }
 ]
 
@@ -140,12 +262,25 @@ const plantGrowthRegulators = [
   {
     name: "Alok", 
     link: "/plant/1.png",
-    desc: "GIBBERELLIC ACID 0.001% SL"
+    desc: "GIBBERELLIC ACID 0.001% SL",
+    options: [
+      "30 ml",
+      "100 ml",
+      "250 ml",
+      "500 ml",
+      "1 ltr"
+    ]
   },
   {
     name: "Speed Up",
     link: "/plant/2.png",
-    desc: "Humic Acid 95%"
+    desc: "Humic Acid 95%",
+    options: [
+      "100 gm",
+      "250 gm",
+      "500 gm",
+      "1 kg",
+    ]
   }
 ]
 
@@ -393,7 +528,7 @@ const Hero = () => {
                   </Link>
                 );
               })}
-              <div className="h-full px-5 flex justify-center items-center font-semibold text-[1rem] bg-[#76B728] hover:bg-[#036B46] text-white transition-all duration-[600ms] ease-in-out cursor-pointer ml-3">
+              <Link href={"/brochure.pdf"} target="_blank" className="h-full px-5 flex justify-center items-center font-semibold text-[1rem] bg-[#76B728] hover:bg-[#036B46] text-white transition-all duration-[600ms] ease-in-out cursor-pointer ml-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -412,10 +547,10 @@ const Hero = () => {
                   />
                 </svg>
                 <span>Brochure</span>
-              </div>
+              </Link>
             </div>
             <div className="h-full flex justify-center items-center px-[1rem]">
-              <div className="px-[1.5rem] bg-white rounded-full flex justify-center items-center border-[2px] border-[#79BC28] scale-90 hover:bg-[#E3FFC1] cursor-pointer">
+              <Link href="https://wa.me/919537037616" target="_blank" className="px-[1.5rem] bg-white rounded-full flex justify-center items-center border-[2px] border-[#79BC28] scale-90 hover:bg-[#E3FFC1] cursor-pointer">
                 <Image
                   src="/india.png"
                   width={30}
@@ -426,7 +561,7 @@ const Hero = () => {
                 <span className="text-[#555] text-[0.9rem] font-normal py-[0.75rem]">
                   +9195370 37616
                 </span>
-              </div>
+              </Link>
             </div>
           </div>
           <div className="w-full flex justify-center items-center h-[55vh] max-md:h-[45vh]">
@@ -463,7 +598,7 @@ const Hero = () => {
       >
         {products.map((item, index) => {
           return(
-            <div key={index} class="w-72 bg-white border border-[#00734A] overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <div key={index} class="w-72 group bg-white border border-[#00734A] overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <div alt="Product" class="h-80 w-72 object-cover rounded-t-xl">
               <div className="h-40 w-72 rounded-b-full bg-[#00734A] flex justify-center">
                 <svg
@@ -517,7 +652,7 @@ const Hero = () => {
             <div className="px-5">
               <div className="border-t-[0.125rem] border-[#BBB] rounded-full"></div>
             </div>
-            <div class="px-4 py-5 w-72 text-center">
+            <div class="px-4 py-5 w-72 text-center group-hover:hidden">
               <p class="text-lg font-bold text-black truncate block capitalize">
                 {item.name}
               </p>
@@ -525,7 +660,17 @@ const Hero = () => {
                 {item.desc}
               </p>
             </div>
-
+            <div className="flex-wrap justify-center items-center px-[0.5rem] scale-90 hidden duration-500 group-hover:flex group-hover:mt-2">
+              {item.options.map((item, key) => {
+                return (
+                  <div key={key} className="px-[0.6rem] py-[0.35rem] text-center mx-[0.3rem] mb-[0.5rem] border border-[#656565]">
+                    <p className="text-xs text-black font-thin">
+                      {item}
+                    </p>
+                  </div>
+                )
+              })}
+            </div>
         </div>
           )
         })}
