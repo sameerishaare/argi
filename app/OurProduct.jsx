@@ -81,8 +81,8 @@ const OurProduct = () => {
                     <Image src={prod3} alt="Picture of the author" width={500} height={500} />
                 </div> */}
             </div>
-            <Link href="/products?=insecticides" className='mt-[1.28rem] md:hidden'>
-                <div className="overflow-hidden max-w-[22.8rem] max-h-[15rem] group border rounded-2xl relative">
+            <Link href="/products?=insecticides" className=' md:hidden'>
+                <div className="overflow-hidden mt-[1.28rem] max-w-[22.8rem] max-h-[15rem] group border rounded-2xl relative">
                     <Image src={'/beetle.png'} alt="Picture of the author" width={400} height={500} className='w-full h-full object-cover group-hover:rotate-3 group-hover:scale-110 transition-all duration-500 ease-in-out' />
                     <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Insecticides</h1>
                     <Link href="/products?=insecticides" className='bg-[#FFF] rounded-full px-5 py-2 text-[#005B1B] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-opacity-[90%] flex justify-center items-center transition-all duration-500 ease-in-out'>
@@ -93,8 +93,8 @@ const OurProduct = () => {
                     </Link>
                 </div>
             </Link>
-            <Link href="/products?=herbicides" className='mt-[1.28rem] md:hidden'>
-                <div className="overflow-hidden max-w-[22.8rem] max-h-[15rem] group border rounded-2xl relative">
+            <Link href="/products?=herbicides" className=' md:hidden'>
+                <div className="overflow-hidden mt-[1.28rem] max-w-[22.8rem] max-h-[15rem] group border rounded-2xl relative">
                     <Image src={'/farm.png'} alt="Picture of the author" width={400} height={500} className='w-full h-full object-cover group-hover:rotate-3 group-hover:scale-110 transition-all duration-500 ease-in-out' />
                     <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Herbicide / weedicides</h1>
                     <Link href="/products?=herbicides" className='bg-[#FFF] rounded-full px-5 py-2 text-[#005B1B] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-opacity-[90%] flex justify-center items-center transition-all duration-500 ease-in-out'>
@@ -105,8 +105,8 @@ const OurProduct = () => {
                     </Link>
                 </div>
             </Link>
-            <Link href="/products?=fungicides" className='mt-[1.28rem] md:hidden'>
-                <div className="overflow-hidden max-w-[22.8rem] max-h-[15rem] group border rounded-2xl relative">
+            <Link href="/products?=fungicides" className='md:hidden'>
+                <div className="overflow-hidden mt-[1.28rem]  max-w-[22.8rem] max-h-[15rem] group border rounded-2xl relative">
                     <Image src={'/grape.png'} alt="Picture of the author" width={400} height={500} className='w-full h-full object-cover group-hover:rotate-3 group-hover:scale-110 transition-all duration-500 ease-in-out' />
                     <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Fungicides</h1>
                     <Link href="/products?=fungicides" className='bg-[#FFF] rounded-full px-5 py-2 text-[#005B1B] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-opacity-[90%] flex justify-center items-center transition-all duration-500 ease-in-out'>
@@ -117,8 +117,8 @@ const OurProduct = () => {
                     </Link>
                 </div>
             </Link>
-            <Link href="/products?=plant-growth-regulators" className='mt-[1.28rem] md:hidden'>
-                <div className="overflow-hidden max-w-[22.8rem] max-h-[15rem] group border rounded-2xl relative">
+            <Link href="/products?=plant-growth-regulators" className='md:hidden'>
+                <div className="overflow-hidden mt-[1.28rem]  max-w-[22.8rem] max-h-[15rem] group border rounded-2xl relative">
                     <Image src={'/ourlongmobile.png'} alt="Picture of the author" width={500} height={500} className='w-full h-full object-cover group-hover:rotate-3 group-hover:scale-110 transition-all duration-500 ease-in-out' />
                     <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Plant Growth Promoter</h1>
                     <Link href="/products?=plant-growth-regulators" className='bg-[#FFF] rounded-full px-5 py-2 text-[#005B1B] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-opacity-[90%] flex justify-center items-center transition-all duration-500 ease-in-out'>

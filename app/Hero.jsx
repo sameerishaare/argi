@@ -287,11 +287,9 @@ const Hero = () => {
           } transition-all duration-500 ease-in-out max-md:text-center max-md:flex max-md:flex-col max-md:items-center max-md:justify-center`}
         >
           <p className="text-white text-[3rem] font-bold max-md:hidden">
-            Cultivating Growth:
+            Better Environment,
             <br />
-            <i>Agropharma&apos;s Sustainable</i>
-            <br />
-            <i>Revolution</i>
+            <i>Better Tomorrow</i>
           </p>
           <p className="text-white text-[1.75rem] font-bold whitespace-nowrap md:hidden">
             <b>Better Environment,
@@ -332,11 +330,9 @@ const Hero = () => {
           } transition-all duration-500 ease-in-out max-md:text-center max-md:flex max-md:flex-col max-md:items-center max-md:justify-center`}
         >
           <p className="text-white text-[3rem] font-bold max-md:hidden">
-            Cultivating Growth:
+            Better Environment,
             <br />
-            <i>Agropharma&apos;s Sustainable</i>
-            <br />
-            <i>Revolution</i>
+            <i>Better Tomorrow</i>
           </p>
           <p className="text-white text-[1.75rem] font-bold whitespace-nowrap md:hidden">
             <b>Better Environment,
@@ -377,11 +373,9 @@ const Hero = () => {
           } transition-all duration-500 ease-in-out max-md:text-center max-md:flex max-md:flex-col max-md:items-center max-md:justify-center`}
         >
           <p className="text-white text-[3rem] font-bold max-md:hidden">
-            Cultivating Growth:
+            Better Environment,
             <br />
-            <i>Agropharma&apos;s Sustainable</i>
-            <br />
-            <i>Revolution</i>
+            <i>Better Tomorrow</i>
           </p>
           <p className="text-white text-[1.75rem] font-bold whitespace-nowrap md:hidden">
             <b>Better Environment,
