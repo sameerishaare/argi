@@ -33,12 +33,11 @@ const insecticides = [
     link: "/insect/6.png",
     desc: "FIPRONIL 2.92% W/W EC",
     options: [
-      "30 ml",
+      "20 ml",
       "100 ml",
       "250 ml",
       "500 ml",
       "1 ltr",
-      "5 ltr"
     ]
   },
   {
@@ -46,12 +45,11 @@ const insecticides = [
     link: "/insect/7.png",
     desc: "EMAMECTIN BENZOATE 1.9% EC",
     options: [
-      "30 ml",
+      "20 ml",
       "100 ml",
       "250 ml",
       "500 ml",
       "1 ltr",
-      "5 ltr"
     ]
   },
   {
@@ -71,12 +69,10 @@ const insecticides = [
     link: "/insect/4.png",
     desc: "DELTAMETHRIN 11% EC",
     options: [
-      "30 ml",
       "100 ml",
       "250 ml",
       "500 ml",
       "1 ltr",
-      "5 ltr"
     ]
   },
   {
@@ -136,7 +132,7 @@ const insecticides = [
     ]
   },
   {
-    name: "AC-PEIDE",
+    name: "AC-PRIDE",
     link: "/insect/10.png",
     desc: "Acetamiprid 20% SP",
     options: [
@@ -206,8 +202,6 @@ const herbicides = [
     link: "/herb/5.png",
     desc: "PENDIMETHALIN 30% EC",
     options: [
-      "30 ml",
-      "100 ml",
       "250 ml",
       "500 ml",
       "1 ltr",
@@ -229,6 +223,7 @@ const herbicides = [
     options: [
       "500 ml",
       "1 ltr",
+      "5 ltr",
     ]
   }
 ]
@@ -268,7 +263,8 @@ const plantGrowthRegulators = [
       "100 ml",
       "250 ml",
       "500 ml",
-      "1 ltr"
+      "1 ltr",
+      "5 ltr"
     ]
   },
   {
