@@ -7,11 +7,11 @@ import MobileNav from "../MobileNav";
 const navItems = [
   {
     name: "Home",
-    link: "#",
+    link: "/",
   },
   {
     name: "About Us",
-    link: "#about-us",
+    link: "/#about-us",
   },
   {
     name: "Our Products",
@@ -29,34 +29,38 @@ const navItems = [
 
 const insecticides = [
   {
-    name: "Wanted",
-    link: "/insect/1.png",
-    desc: "INDOXACARB 14.5% SC",
+    name: "Pistal",
+    link: "/insect/6.png",
+    desc: "FIPRONIL 2.92% W/W EC",
     options: [
-      "25 ml",
-      "50 ml",
+      "30 ml",
       "100 ml",
       "250 ml",
       "500 ml",
+      "1 ltr",
+      "5 ltr"
     ]
   },
   {
-    name: "Saurya",
-    link: "/insect/2.png",
-    desc: "THIAMETHOXAM 75% SG",
+    name: "Adhira",
+    link: "/insect/7.png",
+    desc: "EMAMECTIN BENZOATE 1.9% EC",
     options: [
-      "8 gm",
-      "50 gm",
-      "100 gm",
-      "250 gm",
-      "500 gm",
+      "30 ml",
+      "100 ml",
+      "250 ml",
+      "500 ml",
+      "1 ltr",
+      "5 ltr"
     ]
   },
   {
-    name: "RING TARA PRO",
-    link: "/insect/3.png",
-    desc: "THIAMETHOXAM 30% FS",
+    name: "BULLET-350",
+    link: "/insect/9.png",
+    desc: "Neem Kernel Based EC Containing Azadirachtin 0.3% w/w min (3000 ppm)",
     options: [
+      "30 ml",
+      "100 ml",
       "250 ml",
       "500 ml",
       "1 ltr",
@@ -87,29 +91,25 @@ const insecticides = [
     ]
   },
   {
-    name: "Pistal",
-    link: "/insect/6.png",
-    desc: "FIPRONIL 2.92% W/W EC",
+    name: "RING TARA PRO",
+    link: "/insect/3.png",
+    desc: "THIAMETHOXAM 30% FS",
     options: [
-      "30 ml",
-      "100 ml",
       "250 ml",
       "500 ml",
       "1 ltr",
-      "5 ltr"
     ]
   },
   {
-    name: "Adhira",
-    link: "/insect/7.png",
-    desc: "EMAMECTIN BENZOATE 1.9% EC",
+    name: "Wanted",
+    link: "/insect/1.png",
+    desc: "INDOXACARB 14.5% SC",
     options: [
-      "30 ml",
+      "25 ml",
+      "50 ml",
       "100 ml",
       "250 ml",
       "500 ml",
-      "1 ltr",
-      "5 ltr"
     ]
   },
   {
@@ -124,15 +124,15 @@ const insecticides = [
     ]
   },
   {
-    name: "BULLET-350",
-    link: "/insect/9.png",
-    desc: "Neem Kernel Based EC Containing Azadirachtin 0.3% w/w min (3000 ppm)",
+    name: "RING TARA",
+    link: "/insect/11.png",
+    desc: "THIAMETHOXAM 25% WG",
     options: [
-      "30 ml",
-      "100 ml",
-      "250 ml",
-      "500 ml",
-      "1 ltr",
+      "50 gm",
+      "100 gm",
+      "250 gm",
+      "500 gm",
+      "1 kg",
     ]
   },
   {
@@ -147,15 +147,15 @@ const insecticides = [
     ]
   },
   {
-    name: "Adhira",
-    link: "/insect/11.png",
-    desc: "EMAMECTIN BENZOATE 1.9% EC",
+    name: "Saurya",
+    link: "/insect/2.png",
+    desc: "THIAMETHOXAM 75% SG",
     options: [
-      "20 ml",
-      "100 ml",
-      "250 ml",
-      "500 ml",
-      "1 ltr",
+      "8 gm",
+      "50 gm",
+      "100 gm",
+      "250 gm",
+      "500 gm",
     ]
   },
 ]
@@ -645,8 +645,8 @@ const Hero = () => {
                   </g>
                 </svg>
               </div>
-              <div className="flex justify-center items-center mt-[-5rem]">
-                <Image src={item.link} alt="product images" className="max-w-[100%] min-w-[45%] h-[14rem] " width={105} height={85} />
+              <div className="flex justify-center items-center mt-[-7rem]">
+                <Image src={item.link} alt="product images" className="max-w-[100%] min-w-[45%] h-[16rem] scale-90" width={105} height={85} />
               </div>
             </div>
             <div className="px-5">

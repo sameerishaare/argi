@@ -17,7 +17,7 @@ import Link from "next/link";
 const navItems = [
     {
       name: "Home",
-      link: "#",
+      link: "/",
     },
     {
       name: "About Us",
