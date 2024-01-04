@@ -590,12 +590,12 @@ const Hero = () => {
       <MobileNav/>
       <section
         id="Projects"
-        class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-40 mb-20 max-md:gap-y-10 max-md:gap-x-5 max-md:mt-36 max-md:mb-20"
+        className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-40 mb-20 max-md:gap-y-10 max-md:gap-x-5 max-md:mt-36 max-md:mb-20"
       >
         {products.map((item, index) => {
           return(
-            <div key={index} class="w-72 group bg-white border border-[#00734A] overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-            <div alt="Product" class="h-80 w-72 object-cover rounded-t-xl">
+            <div key={index} className="w-72 group bg-white border border-[#00734A] overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <div alt="Product" className="h-80 w-72 object-cover rounded-t-xl">
               <div className="h-40 w-72 rounded-b-full bg-[#00734A] flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -648,8 +648,8 @@ const Hero = () => {
             <div className="px-5">
               <div className="border-t-[0.125rem] border-[#BBB] rounded-full"></div>
             </div>
-            <div class="px-4 py-5 w-72 text-center group-hover:hidden">
-              <p class="text-lg font-bold text-black truncate block capitalize">
+            <div className="px-4 py-5 w-72 text-center group-hover:hidden">
+              <p className="text-lg font-bold text-black truncate block capitalize">
                 {item.name}
               </p>
               <p className="text-sm text-[#656565] font-thin">

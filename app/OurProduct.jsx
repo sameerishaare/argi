@@ -37,8 +37,8 @@ const OurProduct = () => {
                         <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Herbicide / weedicides</h1>
                         <Link href="/products?=herbicides" className='bg-[#FFF] rounded-full px-5 py-2 text-[#005B1B] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-opacity-[90%] flex justify-center items-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out'>
                             <span className="mr-2">Explore</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 scale-90">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 scale-90">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                             </svg>
                         </Link>
                     </div>
@@ -51,8 +51,8 @@ const OurProduct = () => {
                         <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Insecticides</h1>
                         <Link href="/products?=insecticides" className='bg-[#FFF] rounded-full px-5 py-2 text-[#005B1B] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-opacity-[90%] flex justify-center items-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out'>
                             <span className="mr-2">Explore</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 scale-90">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 scale-90">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                             </svg>
                         </Link>
                     </div>
@@ -61,8 +61,8 @@ const OurProduct = () => {
                         <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Fungicides</h1>
                         <Link href="/products?=fungicides" className='bg-[#FFF] rounded-full px-5 py-2 text-[#005B1B] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-opacity-[90%] flex justify-center items-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out'>
                             <span className="mr-2">Explore</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 scale-90">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 scale-90">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                             </svg>
                         </Link>
                     </div>
@@ -72,8 +72,8 @@ const OurProduct = () => {
                         <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Plant Growth Promoter</h1>
                         <Link href="/products?=plant-growth-regulators" className='bg-[#FFF] rounded-full px-5 py-2 text-[#005B1B] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-opacity-[90%] flex justify-center items-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out'>
                             <span className="mr-2">Explore</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 scale-90">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 scale-90">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                             </svg>
                         </Link>
                 </div>
@@ -87,8 +87,8 @@ const OurProduct = () => {
                     <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Insecticides</h1>
                     <Link href="/products?=insecticides" className='bg-[#FFF] rounded-full px-5 py-2 text-[#005B1B] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-opacity-[90%] flex justify-center items-center transition-all duration-500 ease-in-out'>
                         <span className="mr-2">Explore</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 scale-90">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 scale-90">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                     </Link>
                 </div>
@@ -99,8 +99,8 @@ const OurProduct = () => {
                     <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Herbicide / weedicides</h1>
                     <Link href="/products?=herbicides" className='bg-[#FFF] rounded-full px-5 py-2 text-[#005B1B] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-opacity-[90%] flex justify-center items-center transition-all duration-500 ease-in-out'>
                         <span className="mr-2">Explore</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 scale-90">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 scale-90">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                     </Link>
                 </div>
@@ -111,8 +111,8 @@ const OurProduct = () => {
                     <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Fungicides</h1>
                     <Link href="/products?=fungicides" className='bg-[#FFF] rounded-full px-5 py-2 text-[#005B1B] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-opacity-[90%] flex justify-center items-center transition-all duration-500 ease-in-out'>
                         <span className="mr-2">Explore</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 scale-90">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 scale-90">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                     </Link>
                 </div>
@@ -123,8 +123,8 @@ const OurProduct = () => {
                     <h1 className="text-[#E3E3E3] text-[1.5rem] font-thin top-5 left-4 absolute">Plant Growth Promoter</h1>
                     <Link href="/products?=plant-growth-regulators" className='bg-[#FFF] rounded-full px-5 py-2 text-[#005B1B] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-opacity-[90%] flex justify-center items-center transition-all duration-500 ease-in-out'>
                         <span className="mr-2">Explore</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 scale-90">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 scale-90">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                     </Link>
                 </div>

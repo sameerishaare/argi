@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.agritycropscience.com
+
+# Sitemaps
+Sitemap: https://www.agritycropscience.com/sitemap.xml
