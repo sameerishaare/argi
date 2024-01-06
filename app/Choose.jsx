@@ -134,11 +134,12 @@ const Choose = () => {
 
 
             <Image
-              src={"/choose.png"}
+              src={"/choose.webp"}
               alt="Picture of the author"
               width={1500}
               height={200}
               className="w-[41rem] object-cover rounded-2xl h-[13.5rem] max-md:rounded-xl max-md:min-w-[20.5rem] max-md:h-[8rem]"
+              loading="lazy"
             />
 
 
