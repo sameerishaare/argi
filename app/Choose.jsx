@@ -138,7 +138,15 @@ const Choose = () => {
               alt="Picture of the author"
               width={1500}
               height={200}
-              className="w-[41rem] object-cover rounded-2xl h-[13.5rem] max-md:rounded-xl max-md:min-w-[20.5rem] max-md:h-[8rem]"
+              className="w-[41rem] object-cover rounded-2xl h-[13.5rem] max-md:rounded-xl max-md:hidden"
+              loading="lazy"
+            />
+            <Image
+              src={"/choose-mob.webp"}
+              alt="Picture of the author"
+              width={1500}
+              height={200}
+              className="object-cover rounded-xl min-w-[20.5rem] h-[8rem] md:hidden"
               loading="lazy"
             />
 
