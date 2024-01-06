@@ -64,25 +64,34 @@ const Hero = () => {
     };
   }, [active]);
 
-
-
   return (
     <div
-      style={{
-        backgroundImage:
-          active === 0
-            ? "url('/hero.png')"
-            : active === 1
-            ? "url('/hero1.png')"
-            : "url('/hero2.png')",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        // dark overlay
-      }}
-      className="bg-black bg-opacity-75 max-w-[98vw]"
+      // style={{
+      //   backgroundImage:
+      //     active === 0
+      //       ? "url('/hero.png')"
+      //       : active === 1
+      //       ? "url('/hero1.png')"
+      //       : "url('/hero2.png')",
+      //   backgroundPosition: "center",
+      //   backgroundSize: "cover",
+      //   backgroundRepeat: "no-repeat",
+      //   // dark overlay
+      // }}
+      className="bg-black relative bg-opacity-75 max-w-[99vw]"
     >
-      <div className="h-[100vh] w-[98.95vw] relative bg-gradient-to-b from-black to-transparent">
+      <Image
+        fill
+        className="object-center object-cover pointer-events-none"
+        src={active === 0
+          ? '/hero.webp'
+          : active === 1
+          ? "/hero1.webp"
+          : "/hero2.webp"}
+        alt={"Images of agrity products used in farming"}
+        priority
+      />
+      <div className="h-[100vh] w-[98.95vw] relative z-1 bg-gradient-to-b from-black to-transparent">
         <div
           className={`w-full bg-white  ${
             expand
@@ -245,7 +254,11 @@ const Hero = () => {
                 </Link>
               );
             })}
-            <Link href={"/brochure.pdf"} target="_blank" className="h-full px-5 flex justify-center items-center font-semibold text-[1rem] bg-[#76B728] hover:bg-[#036B46] text-white transition-all duration-[600ms] ease-in-out cursor-pointer ml-3">
+            <Link
+              href={"/brochure.pdf"}
+              target="_blank"
+              className="h-full px-5 flex justify-center items-center font-semibold text-[1rem] bg-[#76B728] hover:bg-[#036B46] text-white transition-all duration-[600ms] ease-in-out cursor-pointer ml-3"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -267,7 +280,11 @@ const Hero = () => {
             </Link>
           </div>
           <div className="h-full flex justify-center items-center px-[1rem]">
-            <Link href="https://wa.me/919537037616" target="_blank" className="px-[1.5rem] bg-white rounded-full flex justify-center items-center border-[2px] border-[#79BC28] scale-90 hover:bg-[#E3FFC1] cursor-pointer">
+            <Link
+              href="https://wa.me/919537037616"
+              target="_blank"
+              className="px-[1.5rem] bg-white rounded-full flex justify-center items-center border-[2px] border-[#79BC28] scale-90 hover:bg-[#E3FFC1] cursor-pointer"
+            >
               <Image
                 src="/india.png"
                 width={30}
@@ -283,7 +300,9 @@ const Hero = () => {
         </div>
         <div
           className={`absolute top-[15rem] ${
-            active === 0 ? "left-[3rem] max-md:left-[50%] max-md:translate-x-[-50%]" : "left-[-40rem] opacity-0"
+            active === 0
+              ? "left-[3rem] max-md:left-[50%] max-md:translate-x-[-50%]"
+              : "left-[-40rem] opacity-0"
           } transition-all duration-500 ease-in-out max-md:text-center max-md:flex max-md:flex-col max-md:items-center max-md:justify-center`}
         >
           <p className="text-white text-[3rem] font-bold max-md:hidden">
@@ -292,12 +311,18 @@ const Hero = () => {
             <i>Better Tomorrow</i>
           </p>
           <p className="text-white text-[1.75rem] font-bold whitespace-nowrap md:hidden">
-            <b>Better Environment,
-            <br />
-            Better Tomorrow</b>
+            <b>
+              Better Environment,
+              <br />
+              Better Tomorrow
+            </b>
           </p>
           <div className="">
-            <Link href="https://wa.me/919537037616" target="_blank" className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90">
+            <Link
+              href="https://wa.me/919537037616"
+              target="_blank"
+              className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90"
+            >
               <svg
                 className="h-6 w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -326,7 +351,9 @@ const Hero = () => {
         </div>
         <div
           className={`absolute top-[15rem] ${
-            active === 1 ? "left-[3rem] max-md:left-[50%] max-md:translate-x-[-50%]" : "left-[-40rem] opacity-0"
+            active === 1
+              ? "left-[3rem] max-md:left-[50%] max-md:translate-x-[-50%]"
+              : "left-[-40rem] opacity-0"
           } transition-all duration-500 ease-in-out max-md:text-center max-md:flex max-md:flex-col max-md:items-center max-md:justify-center`}
         >
           <p className="text-white text-[3rem] font-bold max-md:hidden">
@@ -335,12 +362,18 @@ const Hero = () => {
             <i>Better Tomorrow</i>
           </p>
           <p className="text-white text-[1.75rem] font-bold whitespace-nowrap md:hidden">
-            <b>Better Environment,
-            <br />
-            Better Tomorrow</b>
+            <b>
+              Better Environment,
+              <br />
+              Better Tomorrow
+            </b>
           </p>
           <div className="">
-            <Link href="https://wa.me/919537037616" target="_blank" className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90">
+            <Link
+              href="https://wa.me/919537037616"
+              target="_blank"
+              className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90"
+            >
               <svg
                 className="h-6 w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -369,7 +402,9 @@ const Hero = () => {
         </div>
         <div
           className={`absolute top-[15rem] ${
-            active === 2 ? "left-[3rem] max-md:left-[50%] max-md:translate-x-[-50%]" : "left-[-40rem] opacity-0"
+            active === 2
+              ? "left-[3rem] max-md:left-[50%] max-md:translate-x-[-50%]"
+              : "left-[-40rem] opacity-0"
           } transition-all duration-500 ease-in-out max-md:text-center max-md:flex max-md:flex-col max-md:items-center max-md:justify-center`}
         >
           <p className="text-white text-[3rem] font-bold max-md:hidden">
@@ -378,12 +413,18 @@ const Hero = () => {
             <i>Better Tomorrow</i>
           </p>
           <p className="text-white text-[1.75rem] font-bold whitespace-nowrap md:hidden">
-            <b>Better Environment,
-            <br />
-            Better Tomorrow</b>
+            <b>
+              Better Environment,
+              <br />
+              Better Tomorrow
+            </b>
           </p>
           <div className="">
-            <Link href="https://wa.me/919537037616" target="_blank" className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90">
+            <Link
+              href="https://wa.me/919537037616"
+              target="_blank"
+              className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90"
+            >
               <svg
                 className="h-6 w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
