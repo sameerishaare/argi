@@ -99,7 +99,7 @@ const AboutPage = () => {
         >
           <div>
             <Image
-              src={image1}
+              src={"/image1.webp"}
               alt="Picture of the author"
               width={350}
               className="rounded-2xl"
@@ -110,7 +110,7 @@ const AboutPage = () => {
         <div ref={ref} className="flex mt-3">
           <div className="m-3 mt-5 rounded-md mr-[3rem] max-md:mt-10 max-md:ml-[-1rem] max-md:scale-[120%]">
             <Image
-              src={image2}
+              src={"/image2.webp"}
               alt="Picture of the author"
               width={200}
               height={200}
@@ -120,7 +120,7 @@ const AboutPage = () => {
           </div>
           <div className="m-3 rounded-md max-md:scale-[120%] max-md:mr-[-3rem]">
             <Image
-              src={image3}
+              src={"/image3.webp"}
               alt="Picture of the author"
               width={300}
               className="rounded-2xl max-md:rounded-md"
