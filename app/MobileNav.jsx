@@ -355,7 +355,7 @@ const MobileNav = () => {
               </Link>
             </div>
             <div className='w-full flex justify-center items-center'>
-              <Link aria-label="chat with us on whatsapp" href="https://wa.me/919537037616" target="_blank" className={`text-white underline hover:no-underline text-[1.25rem] mt-[20rem] ${!openMobileOpen && "hidden"}`}>Contact us</Link>
+              <Link aria-label="Contact us on whatsapp" href="https://wa.me/919898977575" target="_blank" className={`text-white underline hover:no-underline text-[1.25rem] mt-[20rem] ${!openMobileOpen && "hidden"}`}>Contact us</Link>
             </div>
           </div>
         </div>

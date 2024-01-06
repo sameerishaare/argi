@@ -281,8 +281,8 @@ const Hero = () => {
           </div>
           <div className="h-full flex justify-center items-center px-[1rem]">
             <Link
-              aria-label="chat with us on whatsapp"
-              href="https://wa.me/919537037616"
+              aria-label="chat with us on agrity whatsapp number +9198989 77575"
+              href="https://wa.me/919898977575"
               target="_blank"
               className="px-[1.5rem] bg-white rounded-full flex justify-center items-center border-[2px] border-[#79BC28] scale-90 hover:bg-[#E3FFC1] cursor-pointer"
             >
@@ -294,7 +294,7 @@ const Hero = () => {
                 className="mr-2"
               />
               <span className="text-[#555] text-[0.9rem] font-normal py-[0.75rem]">
-                +9195370 37616
+                +9198989 77575
               </span>
             </Link>
           </div>
@@ -320,8 +320,8 @@ const Hero = () => {
           </p>
           <div className="">
             <Link
-            aria-label="chat with us on whatsapp"
-              href="https://wa.me/919537037616"
+            aria-label="Contact us on whatsapp"
+              href="https://wa.me/919898977575"
               target="_blank"
               className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90"
             >
@@ -372,8 +372,8 @@ const Hero = () => {
           </p>
           <div className="">
             <Link
-            aria-label="chat with us on whatsapp"
-              href="https://wa.me/919537037616"
+            aria-label="Contact us on whatsapp"
+              href="https://wa.me/919898977575"
               target="_blank"
               className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90"
             >
@@ -424,8 +424,8 @@ const Hero = () => {
           </p>
           <div className="">
             <Link
-            aria-label="chat with us on whatsapp"
-              href="https://wa.me/919537037616"
+            aria-label="Contact us on whatsapp"
+              href="https://wa.me/919898977575"
               target="_blank"
               className="flex justify-center items-center rounded-full bg-[#76B728] hover:bg-[#036B46] transition-all duration-[600ms] ease-in-out cursor-pointer px-5 py-3 text-white w-min whitespace-nowrap mt-4 ml-1 max-md:text-[0.875rem] max-md:py-2 max-md:px-4 max-md:scale-90"
             >

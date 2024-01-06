@@ -141,13 +141,13 @@ const Footer = () => {
               <Link aria-label="read more about us" href="#about-us" className="hover:text-[#79BC28]">
                 About Us
               </Link>
-              <Link aria-label="see agrity products" href="#products" className="hover:text-[#79BC28]">
+              <Link aria-label="see Our Products" href="#products" className="hover:text-[#79BC28]">
                 Our Products
               </Link>
               <Link aria-label="why choose us" href="#choose" className="hover:text-[#79BC28]">
                 Why Choose Us
               </Link>
-              <Link aria-label="see frequently answered question" href="#faq" className="hover:text-[#79BC28]">
+              <Link aria-label="see FAQ" href="#faq" className="hover:text-[#79BC28]">
                 FAQ
               </Link>
             </div>
@@ -182,7 +182,8 @@ const Footer = () => {
                 <div className="">agritycropscience@gmail.com</div>
               </Link>{" "}
               <Link
-                aria-label="find us on google map"
+                aria-label="find us on google map Revenue Survey No. 916/1, Plot No. 6, Millennium Park-2, At.
+                Navagadh (Guj.)"
                 href="https://maps.app.goo.gl/77Pjaui5EDiFTnii9"
                 target="_blank"
                 className=" flex items-start  gap-2 "
@@ -232,7 +233,7 @@ const Footer = () => {
                     loading="lazy"
                   />
                 </Link>
-                <Link href={"https://wa.me/919537037616"} target="_blank">
+                <Link href={"https://wa.me/919898977575"} target="_blank">
                   <Image
                     className="hover:scale-105 hover:translate-y-[-2px] transition-all ease-in-out duration-300 cursor-pointer"
                     src={iconwhat}
@@ -766,8 +767,8 @@ const Footer = () => {
               <h1 className="text-white text-[0.76rem]">Contact Us</h1>
               <div className="mt-1.5">
                 <Link
-                  aria-label="chat with us on whatsapp"
-                  href="https://wa.me/919537037616"
+                  aria-label="chat with us agrity whatsapp number +9198989 77575"
+                  href="https://wa.me/919898977575"
                   target="_blank"
                   className="flex items-center"
                 >
@@ -785,7 +786,7 @@ const Footer = () => {
                     />
                   </svg>
                   <h1 className="text-white text-[0.75rem] font-thin ml-1">
-                    +9195370 37616
+                    +9198989 77575
                   </h1>
                 </Link>
                 <Link
@@ -920,7 +921,7 @@ const Footer = () => {
                     />
                   </svg>
                 </Link>
-                <Link href={"https://wa.me/919537037616"} target="_blank">
+                <Link href={"https://wa.me/919898977575"} target="_blank">
                   <svg
                     className="mr-[0.62rem]"
                     xmlns="http://www.w3.org/2000/svg"
