@@ -574,7 +574,7 @@ const Hero = () => {
           </div>
           <div className="w-full px-[10rem] max-xl:px-[7.5rem] max-lg:px-[5rem] max-md:px-[2rem]">
             <div className="rounded-2xl p-[1.5rem] bg-white mt-[-5rem] shadow-xl text-[#5F5F5F] font-thin max-lg:text-sm max-md:text-xs max-md:p-[1rem]">
-              <b className="text-black font-semibold">Safety Tips :</b> The
+              <b className="text-black font-semibold">Safety Tips : </b>AGRITY CROP SCIENCE - The
               information provided on this website is for reference only. Always
               refer to the product label for an official listing of crops,
               target pests, directions for use, restrictions and precautions.
