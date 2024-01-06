@@ -7,7 +7,7 @@ const faqList = [
     {
         question: 'How does agropharma differ from traditional agriculture?',
         answer: 'Agropharma incorporates advanced technologies, such as genetic engineering and precision farming, to optimize plant growth, improve nutrient uptake, and mitigate environmental impact.',
-        image: "/faq.svg"
+        image: "/faq.webp"
     },
     {
         question: 'What are the key benefits of agropharma products?',
@@ -71,7 +71,7 @@ const FAQ = () => {
             </div>
             <div className="basis-2/5">
                 <Image
-                    src={question >= 0 ? faqList[question]?.image : "/faq.svg"}
+                    src={question >= 0 ? faqList[question]?.image : "/faq.webp"}
                     className="w-full h-[22rem]  md:h-full object-cover max-md:h-[17rem]" width={500} height={500}
                     alt=''
                 />
