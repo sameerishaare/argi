@@ -281,7 +281,6 @@ const Hero = () => {
           </div>
           <div className="h-full flex justify-center items-center px-[1rem]">
             <Link
-              aria-label="+9198989 77575"
               href="https://wa.me/919898977575"
               target="_blank"
               className="px-[1.5rem] bg-white rounded-full flex justify-center items-center border-[2px] border-[#79BC28] scale-90 hover:bg-[#E3FFC1] cursor-pointer"

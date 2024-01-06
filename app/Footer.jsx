@@ -182,7 +182,6 @@ const Footer = () => {
                 <div className="">agritycropscience@gmail.com</div>
               </Link>{" "}
               <Link
-                aria-label="Revenue Survey No. 916/1, Plot No. 6, Millennium Park-2, At. Navagadh (Guj.)"
                 href="https://maps.app.goo.gl/77Pjaui5EDiFTnii9"
                 target="_blank"
                 className=" flex items-start  gap-2 "
@@ -811,7 +810,6 @@ const Footer = () => {
                   </h1>
                 </Link>
                 <Link
-                  aria-label="Revenue Survey No. 916/1, Plot No. 6, Millennium Park-2, At. Navagadh (Guj.)."
                   href="https://maps.app.goo.gl/77Pjaui5EDiFTnii9"
                   target="_blank"
                   className="flex items-start mt-[0.62rem]"
