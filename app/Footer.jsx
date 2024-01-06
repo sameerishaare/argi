@@ -920,7 +920,7 @@ const Footer = () => {
                     />
                   </svg>
                 </Link>
-                <Link href={"https://wa.me/919898977575"} target="_blank">
+                <Link aria-label="Contact us on whatsapp" href={"https://wa.me/919898977575"} target="_blank">
                   <svg
                     className="mr-[0.62rem]"
                     xmlns="http://www.w3.org/2000/svg"
