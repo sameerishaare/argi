@@ -50,7 +50,7 @@ const MobileNav = () => {
     <>
         <div className={`w-full top-0 z-[300] ${expand ? "absolute min-h-[3rem]" : "bg-white fixed shadow-xl max-h-[3.5rem]"} transition-all duration-[350ms] ease-linear md:hidden`}>
           <div className={`w-full flex items-center justify-between pr-4 ${expand ? "" : "mt-[0rem]"}`}>
-            <Link href="/">
+            <Link href="/" aria-label="Go back to home">
               <svg
                 className={`${expand ? "" : "h-[50px] w-[70px] border-r transition-all duration-[350ms] ease-linear"}`}
                 xmlns="http://www.w3.org/2000/svg"
@@ -355,7 +355,7 @@ const MobileNav = () => {
               </Link>
             </div>
             <div className='w-full flex justify-center items-center'>
-              <Link href="https://wa.me/919537037616" target="_blank" className={`text-white underline hover:no-underline text-[1.25rem] mt-[20rem] ${!openMobileOpen && "hidden"}`}>Contact us</Link>
+              <Link aria-label="chat with us on whatsapp" href="https://wa.me/919537037616" target="_blank" className={`text-white underline hover:no-underline text-[1.25rem] mt-[20rem] ${!openMobileOpen && "hidden"}`}>Contact us</Link>
             </div>
           </div>
         </div>

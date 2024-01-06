@@ -547,7 +547,7 @@ const Hero = () => {
               </Link>
             </div>
             <div className="h-full flex justify-center items-center px-[1rem]">
-              <Link href="https://wa.me/919537037616" target="_blank" className="px-[1.5rem] bg-white rounded-full flex justify-center items-center border-[2px] border-[#79BC28] scale-90 hover:bg-[#E3FFC1] cursor-pointer">
+              <Link aria-label="chat with us on whatsapp" href="https://wa.me/919537037616" target="_blank" className="px-[1.5rem] bg-white rounded-full flex justify-center items-center border-[2px] border-[#79BC28] scale-90 hover:bg-[#E3FFC1] cursor-pointer">
                 <Image
                   src="/india.png"
                   width={30}

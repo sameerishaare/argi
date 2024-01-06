@@ -135,19 +135,19 @@ const Footer = () => {
 
             <div className="flex flex-col  mx-auto  gap-3 scale-110 mt-5">
               <div className="font-semibold text-xl">Navigation</div>
-              <Link href="#home" className="hover:text-[#79BC28]">
+              <Link aria-label="go to home" href="#home" className="hover:text-[#79BC28]">
                 Home
               </Link>
-              <Link href="#about-us" className="hover:text-[#79BC28]">
+              <Link aria-label="read more about us" href="#about-us" className="hover:text-[#79BC28]">
                 About Us
               </Link>
-              <Link href="#products" className="hover:text-[#79BC28]">
+              <Link aria-label="see agrity products" href="#products" className="hover:text-[#79BC28]">
                 Our Products
               </Link>
-              <Link href="#choose" className="hover:text-[#79BC28]">
+              <Link aria-label="why choose us" href="#choose" className="hover:text-[#79BC28]">
                 Why Choose Us
               </Link>
-              <Link href="#faq" className="hover:text-[#79BC28]">
+              <Link aria-label="see frequently answered question" href="#faq" className="hover:text-[#79BC28]">
                 FAQ
               </Link>
             </div>
@@ -182,6 +182,7 @@ const Footer = () => {
                 <div className="">agritycropscience@gmail.com</div>
               </Link>{" "}
               <Link
+                aria-label="find us on google map"
                 href="https://maps.app.goo.gl/77Pjaui5EDiFTnii9"
                 target="_blank"
                 className=" flex items-start  gap-2 "
@@ -204,6 +205,7 @@ const Footer = () => {
               <div className=" font-semibold ">We are available on</div>
               <div className="flex gap-3 ml-[-0rem]">
                 <Link
+                  aria-label="check agrity instagram page"
                   href="https://www.instagram.com/agrity_crop_science/"
                   target="_blank"
                 >
@@ -217,6 +219,7 @@ const Footer = () => {
                   />
                 </Link>
                 <Link
+                aria-label="check agrity facebook page"
                   href="https://www.facebook.com/people/Agrity-Crop-Science/61553506395795/"
                   target="_blank"
                 >
@@ -763,6 +766,7 @@ const Footer = () => {
               <h1 className="text-white text-[0.76rem]">Contact Us</h1>
               <div className="mt-1.5">
                 <Link
+                  aria-label="chat with us on whatsapp"
                   href="https://wa.me/919537037616"
                   target="_blank"
                   className="flex items-center"
@@ -807,6 +811,7 @@ const Footer = () => {
                   </h1>
                 </Link>
                 <Link
+                  aria-label="navigate to our location"
                   href="https://maps.app.goo.gl/77Pjaui5EDiFTnii9"
                   target="_blank"
                   className="flex items-start mt-[0.62rem]"
@@ -858,6 +863,7 @@ const Footer = () => {
               </h1>
               <div className="flex mt-[0.31rem]">
                 <Link
+                  aria-label="navigate to our facebook page"
                   href="https://www.instagram.com/agrity_crop_science/"
                   target="_blank"
                 >
@@ -892,6 +898,7 @@ const Footer = () => {
                   </svg>
                 </Link>
                 <Link
+                  aria-label="navigate to our instagram page"
                   href="https://www.facebook.com/people/Agrity-Crop-Science/61553506395795/"
                   target="_blank"
                 >
