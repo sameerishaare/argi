@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Footer from "../Footer";
 import MobileNav from "../MobileNav";
+import { useRouter } from "next/navigation";
 
 const navItems = [
   {
@@ -322,6 +323,8 @@ const Hero = () => {
     };
   }, [active]);
 
+  const router = useRouter();
+
 
 
   useEffect(() => {
@@ -342,6 +345,8 @@ const Hero = () => {
     else if(urlSplit[1] === "plant-growth-regulators") {
       setProductType("plant-growth-regulators");
       setProducts(plantGrowthRegulators);
+    }else{
+      router.push("/");
     }
   }, []);
 
