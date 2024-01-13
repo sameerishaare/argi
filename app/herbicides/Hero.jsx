@@ -29,135 +29,6 @@ const navItems = [
   },
 ];
 
-const insecticides = [
-  {
-    name: "Pistal",
-    link: "/insect/6.png",
-    desc: "FIPRONIL 2.92% W/W EC",
-    options: [
-      "20 ml",
-      "100 ml",
-      "250 ml",
-      "500 ml",
-      "1 ltr",
-    ]
-  },
-  {
-    name: "Adhira",
-    link: "/insect/7.png",
-    desc: "EMAMECTIN BENZOATE 1.9% EC",
-    options: [
-      "20 ml",
-      "100 ml",
-      "250 ml",
-      "500 ml",
-      "1 ltr",
-    ]
-  },
-  {
-    name: "BULLET-350",
-    link: "/insect/9.png",
-    desc: "Neem Kernel Based EC Containing Azadirachtin 0.3% w/w min (3000 ppm)",
-    options: [
-      "30 ml",
-      "100 ml",
-      "250 ml",
-      "500 ml",
-      "1 ltr",
-    ]
-  },
-  {
-    name: "DETHRIN 11",
-    link: "/insect/4.png",
-    desc: "DELTAMETHRIN 11% EC",
-    options: [
-      "100 ml",
-      "250 ml",
-      "500 ml",
-      "1 ltr",
-    ]
-  },
-  {
-    name: "PROCURE",
-    link: "/insect/5.png",
-    desc: "EMAMECTIN BENZOATE 5% SG",
-    options: [
-      "50 gm",
-      "100 gm",
-      "250 gm",
-      "500 gm",
-    ]
-  },
-  {
-    name: "RING TARA PRO",
-    link: "/insect/3.png",
-    desc: "THIAMETHOXAM 30% FS",
-    options: [
-      "250 ml",
-      "500 ml",
-      "1 ltr",
-    ]
-  },
-  {
-    name: "Wanted",
-    link: "/insect/1.png",
-    desc: "INDOXACARB 14.5% SC",
-    options: [
-      "25 ml",
-      "50 ml",
-      "100 ml",
-      "250 ml",
-      "500 ml",
-    ]
-  },
-  {
-    name: "Circle",
-    link: "/insect/8.png",
-    desc: "CYPERMETHRIN 25% EC",
-    options: [
-      "100 ml",
-      "250 ml",
-      "500 ml",
-      "1 ltr",
-    ]
-  },
-  {
-    name: "RING TARA",
-    link: "/insect/11.png",
-    desc: "THIAMETHOXAM 25% WG",
-    options: [
-      "50 gm",
-      "100 gm",
-      "250 gm",
-      "500 gm",
-      "1 kg",
-    ]
-  },
-  {
-    name: "AC-PRIDE",
-    link: "/insect/10.png",
-    desc: "Acetamiprid 20% SP",
-    options: [
-      "100 gm",
-      "250 gm",
-      "500 gm",
-      "1 kg",
-    ]
-  },
-  {
-    name: "Saurya",
-    link: "/insect/2.png",
-    desc: "THIAMETHOXAM 75% SG",
-    options: [
-      "8 gm",
-      "50 gm",
-      "100 gm",
-      "250 gm",
-      "500 gm",
-    ]
-  },
-]
-
 const herbicides = [
   {
     name: "TEJ SUPER",
@@ -230,65 +101,13 @@ const herbicides = [
   }
 ]
 
-const fungicides = [
-  {
-    name: "Tiger-22",
-    link: "/fungicides/1.png",
-    desc: "LIME SULPHUR 22% SC",
-    options: [
-      "1 ltr",
-      "5 ltr",
-      "10 ltr",
-      "20 ltr"
-    ]
-  }, 
-  {
-    name: "Cutoff Plus", 
-    link: "/fungicides/2.png",
-    desc: "HEXACONAZOLE 5% SC",
-    options: [
-      "500 ml",
-      "1 ltr",
-      "2.5 ltr",
-      "5 ltr"
-    ]
-  }
-]
-
-const plantGrowthRegulators = [
-  {
-    name: "Alok", 
-    link: "/plant/1.png",
-    desc: "GIBBERELLIC ACID 0.001% SL",
-    options: [
-      "30 ml",
-      "100 ml",
-      "250 ml",
-      "500 ml",
-      "1 ltr",
-      "5 ltr"
-    ]
-  },
-  {
-    name: "Speed Up",
-    link: "/plant/2.png",
-    desc: "Humic Acid 95%",
-    options: [
-      "100 gm",
-      "250 gm",
-      "500 gm",
-      "1 kg",
-    ]
-  }
-]
-
 const Hero = () => {
   // if scroll is on top, show the navbar
   const [expand, setExpand] = useState(true);
   const [active, setActive] = useState(0);
   const [openMobileOpen, setOpenMobileOpen] = useState(false);
-  const [productType, setProductType] = useState("insecticides");
-  const [products, setProducts] = useState(insecticides);
+  const [productType, setProductType] = useState("herbicides");
+  const [products, setProducts] = useState(herbicides);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -323,32 +142,6 @@ const Hero = () => {
     };
   }, [active]);
 
-  const router = useRouter();
-
-
-
-  useEffect(() => {
-    const url = window.location.href;
-    const urlSplit = url.split("?=");
-    if (urlSplit[1] === "insecticides") {
-      setProductType("insecticides");
-      setProducts(insecticides);
-    }
-    else if(urlSplit[1] === "herbicides") {
-      setProductType("herbicides");
-      setProducts(herbicides);
-    }
-    else if(urlSplit[1] === "fungicides") {
-      setProductType("fungicides");
-      setProducts(fungicides);
-    }
-    else if(urlSplit[1] === "plant-growth-regulators") {
-      setProductType("plant-growth-regulators");
-      setProducts(plantGrowthRegulators);
-    }else{
-      router.push("/");
-    }
-  }, []);
 
   return (
     <>
